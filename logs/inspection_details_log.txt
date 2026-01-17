@@ -1,0 +1,45 @@
+2025-05-07 17:20:11 - Request received
+POST data: Array
+(
+    [report_id] => 40
+)
+
+Session data: Array
+(
+    [client_id] => 26
+    [role] => client
+    [email] => narteareanfredrick@gmail.com
+    [fullname] => Rean Nartea
+)
+
+Processing request for report ID: 40, client ID: 26
+2025-05-07 17:20:21 - Request received
+POST data: Array
+(
+    [report_id] => 40
+)
+
+Session data: Array
+(
+    [client_id] => 26
+    [role] => client
+    [email] => narteareanfredrick@gmail.com
+    [fullname] => Rean Nartea
+)
+
+Processing request for report ID: 40, client ID: 26
+2025-05-07 17:20:29 - Request received
+POST data: Array
+(
+    [report_id] => 40
+)
+
+Session data: Array
+(
+    [client_id] => 26
+    [role] => client
+    [email] => narteareanfredrick@gmail.com
+    [fullname] => Rean Nartea
+)
+
+Processing request for report ID: 40, client ID: 26

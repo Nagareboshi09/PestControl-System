@@ -1,0 +1,383 @@
+/* Assessment Report Page Specific CSS */
+@import url('admin-base.css');
+
+/* Assessment Report Specific Styles */
+.reports-content {
+  width: 100%;
+  flex: 1;
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reports-header h1 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+/* Filter Section */
+.filter-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Report Cards */
+.report-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  transition: var(--transition);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.report-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.report-info {
+  flex: 1;
+}
+
+.report-info h3 {
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.report-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.report-location,
+.report-date,
+.report-technician {
+  display: flex;
+  align-items: center;
+}
+
+.report-location i,
+.report-date i,
+.report-technician i {
+  margin-right: 5px;
+  width: 16px;
+  text-align: center;
+}
+
+.job-order-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 300px;
+}
+
+.job-order-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  margin-left: 20px;
+}
+
+.job-order-status.has-job {
+  background-color: rgba(46, 204, 113, 0.1);
+}
+
+.job-order-status.no-job {
+  background-color: rgba(243, 156, 18, 0.1);
+}
+
+.job-status-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.has-job .job-status-icon {
+  color: var(--success-color);
+}
+
+.no-job .job-status-icon {
+  color: var(--warning-color);
+}
+
+.job-status-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.has-job .job-status-text {
+  color: var(--success-color);
+}
+
+.no-job .job-status-text {
+  color: var(--warning-color);
+}
+
+.report-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-section {
+  margin-bottom: 10px;
+}
+
+.report-section h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.report-section p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.report-attachments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.attachment-thumbnail {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.attachment-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-color: var(--accent-color);
+}
+
+.report-attachment {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+
+.report-footer {
+  padding: 15px 20px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.create-job-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.create-job-btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-job-btn:active {
+  transform: translateY(0);
+}
+
+.create-job-btn::before {
+  content: '\f067'; /* fa-plus */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.view-feedback-btn {
+  background: #f8f9fa;
+  color: var(--accent-color);
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.view-feedback-btn:hover {
+  background: #e9ecef;
+  color: var(--secondary-color);
+}
+
+/* Feedback Rating */
+.feedback-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star-rating i {
+  font-size: 16px;
+}
+
+.text-warning {
+  color: #ffb400 !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.text-secondary {
+  color: #d8d8d8 !important;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+/* Feedback Modal */
+.feedback-modal .modal-dialog {
+  max-width: 600px;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-header h4 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.feedback-rating-large {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.feedback-rating-large .star-rating i {
+  font-size: 24px;
+}
+
+.feedback-comments {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.feedback-date {
+  text-align: right;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .report-header {
+    flex-direction: column;
+  }
+
+  .job-order-container {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .job-order-status {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-row {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .reports-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

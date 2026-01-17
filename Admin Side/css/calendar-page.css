@@ -1,0 +1,228 @@
+/* Calendar Page Specific CSS */
+@import url('admin-base.css');
+
+/* Calendar Page Container */
+
+/* Calendar specific styles */
+.fc-event-appointment {
+    border-left: 4px solid var(--event-color) !important;
+}
+
+.fc-event-job {
+    border-left: 4px solid #22c55e !important;
+}
+
+#calendar {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.fc-header-toolbar {
+    margin-bottom: 1.5em !important;
+}
+
+.fc-button-primary {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+.fc-button-primary:hover {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.fc-button-primary:not(:disabled):active,
+.fc-button-primary:not(:disabled).fc-button-active {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.fc-daygrid-day.fc-day-today {
+    background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+.fc-event {
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 1px 0;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fc-event-title {
+    font-weight: 500;
+    font-size: 0.85em;
+}
+
+.fc-event-time {
+    font-size: 0.75em;
+    opacity: 0.8;
+}
+
+/* Technician workload section */
+.technician-workload {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.technician-workload h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.technician-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.technician-card {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.technician-card:hover {
+    background-color: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.technician-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.technician-info {
+    flex: 1;
+}
+
+.technician-name {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.technician-jobs {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+/* Appointment modal */
+.appointment-modal .modal-dialog {
+    max-width: 700px;
+}
+
+.appointment-details {
+    margin-bottom: 20px;
+}
+
+.appointment-details h4 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.detail-label {
+    width: 150px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.detail-value {
+    flex: 1;
+}
+
+.technician-select {
+    margin-top: 20px;
+}
+
+.technician-select h4 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Filter section */
+.filter-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .technician-list {
+        grid-template-columns: 1fr;
+    }
+}

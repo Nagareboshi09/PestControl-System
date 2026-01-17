@@ -1,0 +1,327 @@
+/**
+ * Tools and Equipment Checklist CSS
+ */
+
+/* Checklist Modal */
+.tools-checklist-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tools-checklist-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tools-checklist-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.tools-checklist-modal.show .tools-checklist-container {
+    transform: translateY(0);
+}
+
+.tools-checklist-header {
+    background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tools-checklist-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.tools-checklist-header h2 i {
+    margin-right: 10px;
+}
+
+.tools-checklist-body {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(90vh - 140px);
+}
+
+.tools-checklist-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f8f9fa;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Category Section */
+.tools-category {
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tools-category-header {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tools-category-header:hover {
+    background-color: #e9ecef;
+}
+
+.tools-category-header .category-name {
+    display: flex;
+    align-items: center;
+}
+
+.tools-category-header .category-name i {
+    margin-right: 10px;
+    color: #3B82F6;
+}
+
+.tools-category-header .category-toggle {
+    transition: transform 0.3s ease;
+}
+
+.tools-category-header.collapsed .category-toggle {
+    transform: rotate(-90deg);
+}
+
+.tools-category-body {
+    padding: 0;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.tools-category-header.collapsed + .tools-category-body {
+    max-height: 0;
+    padding: 0;
+}
+
+.tools-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tool-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+
+.tool-item:last-child {
+    border-bottom: none;
+}
+
+.tool-checkbox {
+    margin-right: 15px;
+}
+
+.tool-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tool-info {
+    flex: 1;
+}
+
+.tool-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.tool-description {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Category Badge */
+.category-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.category-general {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+}
+
+.category-termite {
+    background-color: #fff8e1;
+    color: #ff6f00;
+}
+
+.category-termite-treatment {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.category-weed {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.category-bed-bugs {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+}
+
+/* Progress Bar */
+.checklist-progress {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.checklist-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3B82F6 0%, #1E40AF 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.checklist-progress-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-skip, .btn-confirm {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+
+.btn-skip {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-skip:hover {
+    background-color: #5a6268;
+}
+
+.btn-skip:active {
+    background-color: #495057;
+    transform: translateY(1px);
+}
+
+.btn-confirm {
+    background-color: #3B82F6;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #2563EB;
+}
+
+.btn-confirm:active {
+    background-color: #1E40AF;
+    transform: translateY(1px);
+}
+
+.btn-confirm:disabled {
+    background-color: #a0c4ff;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Add a specific style for the spinner */
+.btn-confirm .fa-spinner {
+    margin-right: 5px;
+}
+
+/* Check All Button */
+.check-all-btn {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #495057;
+}
+
+.check-all-btn:hover {
+    background-color: #3B82F6;
+    color: white;
+    border-color: #3B82F6;
+}
+
+.check-all-btn i {
+    margin-right: 4px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .tools-checklist-container {
+        width: 95%;
+    }
+
+    .tools-checklist-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .tool-item {
+        padding: 10px;
+    }
+}

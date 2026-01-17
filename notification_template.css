@@ -1,0 +1,62 @@
+/* Additional notification styles for Admin Side */
+.notification-container {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: none;
+}
+
+.notification-dropdown.show {
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.user-role {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}

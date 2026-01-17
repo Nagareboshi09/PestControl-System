@@ -1,0 +1,36 @@
+/* Fix for table background colors */
+.table {
+    background-color: white !important;
+}
+
+.table th,
+.table td {
+    background-color: white !important;
+}
+
+.table thead th {
+    background-color: #f8f9fa !important;
+}
+
+/* Override any red/pink backgrounds */
+body {
+    background-color: #f8f9fa !important;
+}
+
+.main-content {
+    background-color: #f8f9fa !important;
+}
+
+/* Fix for job section background */
+.job-section {
+    background-color: white !important;
+}
+
+.card {
+    background-color: white !important;
+}
+
+/* Fix for any other elements with red background */
+div[style*="background-color: #f8d7da"] {
+    background-color: #f8f9fa !important;
+}

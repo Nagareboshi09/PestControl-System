@@ -1,0 +1,187 @@
+/**
+ * Client Side Header CSS
+ * This file contains all the CSS styles for the header in Client Side pages
+ */
+
+/* Import variables */
+@import url('variables.css');
+
+/* Header Styles */
+.header {
+    height: var(--header-height, 70px);
+    background-color: var(--card-color, #ffffff);
+    border-bottom: 1px solid var(--border-color, #e9ecef);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 var(--spacing-xl, 2rem); /* Remove right padding to allow notification bell to be at the very edge */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: var(--sidebar-width, 280px);
+    transition: var(--transition-normal, all 0.3s ease);
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24));
+    /* Ensure header is above other content */
+    z-index: var(--z-index-fixed, 1030);
+    width: calc(100% - var(--sidebar-width, 280px));
+}
+
+/* Logo and Title */
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm, 0.5rem);
+}
+
+.header-title h1 {
+    font-size: var(--font-size-xl, 1.25rem);
+    font-weight: 600;
+    color: var(--primary-color, #3B82F6);
+    margin: 0;
+}
+
+/* Hide "Rean Nartea Client" text in header */
+.header-title {
+    font-size: 0;
+    color: transparent;
+}
+
+/* Ensure any text content in header-title is hidden */
+.header-title * {
+    font-size: 0;
+    color: transparent;
+    display: none;
+}
+
+/* User Menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    gap: var(--spacing-md, 1rem);
+    width: 100%; /* Take full width of available space */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--spacing-sm, 0.5rem) var(--spacing-md, 1rem);
+    border-radius: var(--border-radius-md, 0.5rem);
+    transition: var(--transition-fast, all 0.2s ease);
+    min-width: 40px; /* Ensure the user info area still has some width */
+}
+
+.user-info:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.user-name {
+    font-weight: 500;
+    color: var(--text-primary, #212529);
+    display: none; /* Hide the client name */
+}
+
+.user-role {
+    font-size: var(--font-size-xs, 0.75rem);
+    color: var(--text-secondary, #6c757d);
+    display: none; /* Hide the client role text */
+}
+
+/* Menu Toggle Button */
+#menuToggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: var(--z-index-fixed, 1030);
+    background-color: var(--primary-color, #3B82F6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-md, 0 4px 6px rgba(0, 0, 0, 0.1));
+    transition: var(--transition-fast, all 0.2s ease);
+    display: none;
+}
+
+#menuToggle:hover {
+    background-color: var(--primary-dark, #2563eb);
+    transform: scale(1.05);
+}
+
+/* Main Content Adjustment */
+.main-content {
+    padding-top: calc(var(--header-height, 70px) + var(--spacing-xl, 2rem));
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .header {
+        padding: 0 0 0 var(--spacing-lg, 1.5rem); /* Keep right padding at 0 for notification bell */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        left: 0;
+        width: 100%;
+        padding: 0 0 0 var(--spacing-md, 1rem); /* Adjust left padding, keep right at 0 */
+    }
+
+    #menuToggle {
+        display: flex;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    /* When sidebar is active */
+    body.sidebar-active .header {
+        left: var(--sidebar-width, 280px);
+        width: calc(100% - var(--sidebar-width, 280px));
+        padding: 0 0 0 var(--spacing-md, 1rem); /* Maintain consistent padding */
+    }
+
+    /* Ensure notification bell stays at the right edge even when sidebar is active */
+    body.sidebar-active .header .notification-container {
+        margin-right: 0;
+    }
+
+    body.sidebar-active .main-content {
+        margin-left: var(--sidebar-width, 280px);
+    }
+
+    /* Ensure notification bell stays at the right edge */
+    .header .notification-container {
+        margin-right: 0;
+        padding-right: 16px; /* Add some padding on the right for better touch target */
+    }
+}
+
+/* Notification bell positioning override */
+.header .notification-container {
+    margin-left: auto; /* Push to the right */
+    margin-right: 0; /* Position at the very right edge */
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 0 0 0 var(--spacing-sm, 0.75rem); /* Reduce left padding on very small screens */
+    }
+
+    .header-title h1 {
+        font-size: var(--font-size-lg, 1.125rem);
+    }
+
+    /* Maintain notification positioning on small screens */
+    .header .notification-container {
+        margin-right: 0; /* Keep at the very right edge */
+        padding-right: 12px; /* Slightly less padding on very small screens */
+    }
+}

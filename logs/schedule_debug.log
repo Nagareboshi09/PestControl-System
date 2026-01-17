@@ -1,0 +1,112 @@
+[2025-05-14 09:02:22] Schedule request received: {"report_id":"88"}
+[2025-05-14 09:02:22] Fetching schedule for report ID: 88
+[2025-05-14 09:02:23] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 88
+[2025-05-14 09:02:23] Result rows: 1
+[2025-05-14 09:02:23] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-14","preferred_time":"15:00:00","frequency":"monthly"}
+[2025-05-14 09:02:23] Sending response: {"success":true,"preferred_date":"2025-05-14","preferred_time":"15:00:00","frequency":"monthly","source":"assessment_report"}
+[2025-05-14 09:02:23] Request completed
+[2025-05-14 15:08:45] Schedule request received: {"report_id":"87"}
+[2025-05-14 15:08:45] Fetching schedule for report ID: 87
+[2025-05-14 15:08:45] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 87
+[2025-05-14 15:08:45] Result rows: 1
+[2025-05-14 15:08:45] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-14","preferred_time":"21:30:00","frequency":"monthly"}
+[2025-05-14 15:08:45] Sending response: {"success":true,"preferred_date":"2025-05-14","preferred_time":"21:30:00","frequency":"monthly","source":"assessment_report"}
+[2025-05-14 15:08:45] Request completed
+[2025-05-14 15:18:58] Schedule request received: {"report_id":"88"}
+[2025-05-14 15:18:58] Fetching schedule for report ID: 88
+[2025-05-14 15:18:58] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 88
+[2025-05-14 15:18:58] Result rows: 1
+[2025-05-14 15:18:58] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-14","preferred_time":"14:40:00","frequency":"one-time"}
+[2025-05-14 15:18:58] Sending response: {"success":true,"preferred_date":"2025-05-14","preferred_time":"14:40:00","frequency":"one-time","source":"assessment_report"}
+[2025-05-14 15:18:58] Request completed
+[2025-05-14 19:49:18] Schedule request received: {"report_id":"89"}
+[2025-05-14 19:49:18] Fetching schedule for report ID: 89
+[2025-05-14 19:49:18] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 89
+[2025-05-14 19:49:18] Result rows: 1
+[2025-05-14 19:49:18] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"01:30:00","frequency":"weekly"}
+[2025-05-14 19:49:18] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"01:30:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-14 19:49:18] Request completed
+[2025-05-14 19:52:10] Schedule request received: {"report_id":"90"}
+[2025-05-14 19:52:10] Fetching schedule for report ID: 90
+[2025-05-14 19:52:10] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 90
+[2025-05-14 19:52:10] Result rows: 1
+[2025-05-14 19:52:10] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"01:51:00","frequency":"monthly"}
+[2025-05-14 19:52:10] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"01:51:00","frequency":"monthly","source":"assessment_report"}
+[2025-05-14 19:52:10] Request completed
+[2025-05-14 20:52:07] Schedule request received: {"report_id":"89"}
+[2025-05-14 20:52:07] Fetching schedule for report ID: 89
+[2025-05-14 20:52:07] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 89
+[2025-05-14 20:52:07] Result rows: 1
+[2025-05-14 20:52:07] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"01:30:00","frequency":"weekly"}
+[2025-05-14 20:52:07] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"01:30:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-14 20:52:07] Request completed
+[2025-05-14 22:12:29] Schedule request received: {"report_id":"92"}
+[2025-05-14 22:12:29] Fetching schedule for report ID: 92
+[2025-05-14 22:12:29] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 92
+[2025-05-14 22:12:29] Result rows: 1
+[2025-05-14 22:12:29] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"04:11:00","frequency":"weekly"}
+[2025-05-14 22:12:29] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"04:11:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-14 22:12:29] Request completed
+[2025-05-14 22:47:30] Schedule request received: {"report_id":"95"}
+[2025-05-14 22:47:30] Fetching schedule for report ID: 95
+[2025-05-14 22:47:30] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 95
+[2025-05-14 22:47:30] Result rows: 1
+[2025-05-14 22:47:30] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-13","preferred_time":"04:32:00","frequency":"weekly"}
+[2025-05-14 22:47:30] Sending response: {"success":true,"preferred_date":"2025-05-13","preferred_time":"04:32:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-14 22:47:30] Request completed
+[2025-05-14 22:48:21] Schedule request received: {"report_id":"95"}
+[2025-05-14 22:48:21] Fetching schedule for report ID: 95
+[2025-05-14 22:48:21] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 95
+[2025-05-14 22:48:21] Result rows: 1
+[2025-05-14 22:48:21] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-13","preferred_time":"04:32:00","frequency":"weekly"}
+[2025-05-14 22:48:21] Sending response: {"success":true,"preferred_date":"2025-05-13","preferred_time":"04:32:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-14 22:48:21] Request completed
+[2025-05-14 22:52:12] Schedule request received: {"report_id":"96"}
+[2025-05-14 22:52:12] Fetching schedule for report ID: 96
+[2025-05-14 22:52:12] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 96
+[2025-05-14 22:52:12] Result rows: 1
+[2025-05-14 22:52:12] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"04:51:00","frequency":"weekly"}
+[2025-05-14 22:52:12] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"04:51:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-14 22:52:12] Request completed
+[2025-05-15 00:13:16] Schedule request received: {"report_id":"97"}
+[2025-05-15 00:13:16] Fetching schedule for report ID: 97
+[2025-05-15 00:13:16] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 97
+[2025-05-15 00:13:16] Result rows: 1
+[2025-05-15 00:13:16] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"06:12:00","frequency":"weekly"}
+[2025-05-15 00:13:16] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"06:12:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-15 00:13:16] Request completed
+[2025-05-15 00:29:51] Schedule request received: {"report_id":"98"}
+[2025-05-15 00:29:51] Fetching schedule for report ID: 98
+[2025-05-15 00:29:51] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 98
+[2025-05-15 00:29:51] Result rows: 1
+[2025-05-15 00:29:51] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"06:28:00","frequency":"weekly"}
+[2025-05-15 00:29:51] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"06:28:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-15 00:29:51] Request completed
+[2025-05-15 00:45:45] Schedule request received: {"report_id":"99"}
+[2025-05-15 00:45:45] Fetching schedule for report ID: 99
+[2025-05-15 00:45:45] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 99
+[2025-05-15 00:45:45] Result rows: 1
+[2025-05-15 00:45:45] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"06:44:00","frequency":"weekly"}
+[2025-05-15 00:45:45] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"06:44:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-15 00:45:45] Request completed
+[2025-05-15 00:46:55] Schedule request received: {"report_id":"99"}
+[2025-05-15 00:46:55] Fetching schedule for report ID: 99
+[2025-05-15 00:46:55] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 99
+[2025-05-15 00:46:55] Result rows: 1
+[2025-05-15 00:46:55] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"06:44:00","frequency":"weekly"}
+[2025-05-15 00:46:55] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"06:44:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-15 00:46:55] Request completed
+[2025-05-15 00:46:56] Schedule request received: {"report_id":"99"}
+[2025-05-15 00:46:56] Fetching schedule for report ID: 99
+[2025-05-15 00:46:56] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 99
+[2025-05-15 00:46:56] Result rows: 1
+[2025-05-15 00:46:56] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-15","preferred_time":"06:44:00","frequency":"weekly"}
+[2025-05-15 00:46:56] Sending response: {"success":true,"preferred_date":"2025-05-15","preferred_time":"06:44:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-15 00:46:56] Request completed
+[2025-05-18 15:25:19] Schedule request received: {"report_id":"100"}
+[2025-05-18 15:25:19] Fetching schedule for report ID: 100
+[2025-05-18 15:25:19] Query: SELECT preferred_date, preferred_time, frequency FROM assessment_report WHERE report_id = ? with report_id = 100
+[2025-05-18 15:25:19] Result rows: 1
+[2025-05-18 15:25:19] Retrieved schedule data from assessment_report: {"preferred_date":"2025-05-18","preferred_time":"21:21:00","frequency":"weekly"}
+[2025-05-18 15:25:19] Sending response: {"success":true,"preferred_date":"2025-05-18","preferred_time":"21:21:00","frequency":"weekly","source":"assessment_report"}
+[2025-05-18 15:25:19] Request completed

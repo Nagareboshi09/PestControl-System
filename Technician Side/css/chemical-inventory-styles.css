@@ -1,0 +1,223 @@
+/*
+ * Chemical Inventory Styles
+ * Modern styling for chemical inventory components in the Technician Dashboard
+ */
+
+/* Chemical Tables */
+.chemicals-table-container {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f9fbff);
+    border: 1px solid rgba(230, 235, 245, 0.8);
+    padding: 5px;
+}
+
+.chemicals-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+
+.chemicals-table thead th {
+    background: linear-gradient(135deg, #f8f9fa, #edf2f9);
+    color: #3a4a5e;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 14px 15px;
+    border-bottom: 2px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease;
+}
+
+.chemicals-table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.chemicals-table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.chemicals-table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.chemicals-table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.chemicals-table tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+.chemicals-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.in-stock {
+    background-color: rgba(25, 135, 84, 0.15);
+    color: #198754;
+}
+
+.status-badge.low-stock {
+    background-color: rgba(255, 193, 7, 0.15);
+    color: #fd7e14;
+}
+
+.status-badge.out-of-stock {
+    background-color: rgba(220, 53, 69, 0.15);
+    color: #dc3545;
+}
+
+/* Customize Chemicals Button - Modern Style */
+.customize-chemicals-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #4a6cf7, #2b50ed);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(43, 80, 237, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.customize-chemicals-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2b50ed, #1a3fd8);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.customize-chemicals-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(43, 80, 237, 0.3);
+    color: white;
+}
+
+.customize-chemicals-btn:hover:before {
+    left: 0;
+}
+
+.customize-chemicals-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(43, 80, 237, 0.2);
+}
+
+.customize-chemicals-btn i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+/* Replace Button */
+.replace-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.75rem;
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.replace-btn:hover {
+    background-color: #e9ecef;
+    color: #0a58ca;
+    border-color: #ced4da;
+}
+
+.replace-btn i {
+    margin-right: 5px;
+}
+
+/* Chemical Search Input */
+#chemicalSearchInput {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+#chemicalSearchInput:focus {
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.25);
+}
+
+/* Filter Button */
+#filterByPestTypeBtn {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#filterByPestTypeBtn:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}
+
+/* Expired Chemical Styling */
+.expired-chemical {
+    background-color: rgba(220, 53, 69, 0.05);
+}
+
+.expired-chemical td {
+    color: #6c757d;
+}
+
+.expired-date {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Replaced Chemical Styling */
+.replaced-chemical {
+    background-color: rgba(255, 193, 7, 0.05);
+}
+
+.replaced-chemical .badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Notifications Time Format</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-case {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .result {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notification Time Format Test</h1>
+    
+    <div id="test-results"></div>
+
+    <script>
+        /**
+         * Format time ago from timestamp
+         * For recent timestamps (< 1 hour), shows "time ago" format
+         * For older timestamps, shows the actual time in 12-hour format
+         */
+        function formatTimeAgo(timestamp) {
+            const now = new Date();
+            const date = new Date(timestamp);
+            const diffInSeconds = Math.floor((now - date) / 1000);
+
+            // For very recent timestamps (less than 1 hour), show "time ago" format
+            if (diffInSeconds < 60) {
+                return 'Just now';
+            }
+
+            const diffInMinutes = Math.floor(diffInSeconds / 60);
+            if (diffInMinutes < 60) {
+                return `${diffInMinutes} minute${diffInMinutes > 1 ? 's' : ''} ago`;
+            }
+
+            // For older timestamps, show the actual date and time in 12-hour format
+            // Format the date based on how old it is
+            const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            const notificationDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+            const diffInDays = Math.floor((today - notificationDate) / (1000 * 60 * 60 * 24));
+            
+            // Format the time in 12-hour format (h:mm AM/PM)
+            const timeOptions = { hour: 'numeric', minute: '2-digit', hour12: true };
+            const timeStr = date.toLocaleTimeString('en-US', timeOptions);
+            
+            if (diffInDays === 0) {
+                // Today: show only time
+                return `Today at ${timeStr}`;
+            } else if (diffInDays === 1) {
+                // Yesterday: show "Yesterday at [time]"
+                return `Yesterday at ${timeStr}`;
+            } else if (diffInDays < 7) {
+                // Within the last week: show day of week and time
+                const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+                return `${dayOfWeek} at ${timeStr}`;
+            } else {
+                // Older than a week: show month, day, and time
+                const dateOptions = { month: 'short', day: 'numeric' };
+                const dateStr = date.toLocaleDateString('en-US', dateOptions);
+                return `${dateStr} at ${timeStr}`;
+            }
+        }
+
+        // Test cases
+        function runTests() {
+            const now = new Date();
+            const testResults = document.getElementById('test-results');
+            
+            // Test case 1: Just now (10 seconds ago)
+            const justNow = new Date(now.getTime() - 10 * 1000);
+            addTestCase('10 seconds ago', justNow, formatTimeAgo(justNow));
+            
+            // Test case 2: Minutes ago (5 minutes ago)
+            const minutesAgo = new Date(now.getTime() - 5 * 60 * 1000);
+            addTestCase('5 minutes ago', minutesAgo, formatTimeAgo(minutesAgo));
+            
+            // Test case 3: Hours ago (2 hours ago)
+            const hoursAgo = new Date(now.getTime() - 2 * 60 * 60 * 1000);
+            addTestCase('2 hours ago', hoursAgo, formatTimeAgo(hoursAgo));
+            
+            // Test case 4: Yesterday
+            const yesterday = new Date(now);
+            yesterday.setDate(yesterday.getDate() - 1);
+            yesterday.setHours(14, 30, 0); // 2:30 PM
+            addTestCase('Yesterday at 2:30 PM', yesterday, formatTimeAgo(yesterday));
+            
+            // Test case 5: 3 days ago
+            const threeDaysAgo = new Date(now);
+            threeDaysAgo.setDate(threeDaysAgo.getDate() - 3);
+            threeDaysAgo.setHours(9, 15, 0); // 9:15 AM
+            addTestCase('3 days ago (should show day of week)', threeDaysAgo, formatTimeAgo(threeDaysAgo));
+            
+            // Test case 6: 10 days ago
+            const tenDaysAgo = new Date(now);
+            tenDaysAgo.setDate(tenDaysAgo.getDate() - 10);
+            tenDaysAgo.setHours(18, 45, 0); // 6:45 PM
+            addTestCase('10 days ago (should show month and day)', tenDaysAgo, formatTimeAgo(tenDaysAgo));
+            
+            // Test case 7: 2 months ago
+            const twoMonthsAgo = new Date(now);
+            twoMonthsAgo.setMonth(twoMonthsAgo.getMonth() - 2);
+            twoMonthsAgo.setHours(12, 0, 0); // 12:00 PM
+            addTestCase('2 months ago (should show month and day)', twoMonthsAgo, formatTimeAgo(twoMonthsAgo));
+        }
+        
+        function addTestCase(description, date, result) {
+            const testResults = document.getElementById('test-results');
+            const testCase = document.createElement('div');
+            testCase.className = 'test-case';
+            
+            const formattedDate = date.toLocaleString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
+            });
+            
+            testCase.innerHTML = `
+                <h2>${description}</h2>
+                <p>Original timestamp: ${formattedDate}</p>
+                <p>Formatted result: <span class="result">${result}</span></p>
+            `;
+            
+            testResults.appendChild(testCase);
+        }
+        
+        // Run tests when the page loads
+        document.addEventListener('DOMContentLoaded', runTests);
+    </script>
+</body>
+</html>

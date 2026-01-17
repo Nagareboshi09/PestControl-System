@@ -1,0 +1,688 @@
+2025-05-14 15:08:11 - Direct submit script started
+2025-05-14 15:08:11 - PHP Version: 8.2.12
+2025-05-14 15:08:11 - Session ID: i3901uc8s1vi8lhda9sa88fmri
+2025-05-14 15:08:11 - Session data: Array
+(
+    [user_id] => 1
+    [role] => technician
+    [username] => tech_one
+)
+
+2025-05-14 15:08:11 - Received POST request
+2025-05-14 15:08:11 - POST data: Array
+(
+    [appointment_id] => 112
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Ants
+            [1] => Flies
+        )
+
+    [other_pest_type] => 
+    [problem_area] => Kitchen
+    [notes] => madami
+    [recommendation] => madami
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-14
+    [preferred_time] => 21:30
+    [frequency] => monthly
+    [selected_chemicals] => [{"id":31,"name":"Imidaclopred","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 15:08:11 - Validated data:
+2025-05-14 15:08:11 - appointment_id: 112
+2025-05-14 15:08:11 - area: 100
+2025-05-14 15:08:11 - end_time: 15:08:11
+2025-05-14 15:08:11 - Database connection successful
+2025-05-14 15:08:11 - Appointment found with ID: 112
+2025-05-14 15:08:11 - Report inserted successfully with ID: 87
+2025-05-14 15:08:11 - Appointment status updated successfully
+2025-05-14 15:16:40 - Direct submit script started
+2025-05-14 15:16:40 - PHP Version: 8.2.12
+2025-05-14 15:16:40 - Session ID: i3901uc8s1vi8lhda9sa88fmri
+2025-05-14 15:16:40 - Session data: Array
+(
+    [user_id] => 1
+    [role] => technician
+    [username] => tech_one
+)
+
+2025-05-14 15:16:40 - Received POST request
+2025-05-14 15:16:40 - POST data: Array
+(
+    [appointment_id] => 113
+    [area] => 1000
+    [pest_types] => Array
+        (
+            [0] => Ants
+        )
+
+    [other_pest_type] => 
+    [problem_area] => Dining
+    [notes] => sas
+    [recommendation] => sas
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-14
+    [preferred_time] => 14:40
+    [frequency] => one-time
+    [selected_chemicals] => [{"id":31,"name":"Imidaclopred","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 15:16:40 - Validated data:
+2025-05-14 15:16:40 - appointment_id: 113
+2025-05-14 15:16:40 - area: 1000
+2025-05-14 15:16:40 - end_time: 15:16:40
+2025-05-14 15:16:40 - Database connection successful
+2025-05-14 15:16:40 - Appointment found with ID: 113
+2025-05-14 15:16:40 - Report inserted successfully with ID: 88
+2025-05-14 15:16:40 - Appointment status updated successfully
+2025-05-14 19:51:55 - Direct submit script started
+2025-05-14 19:51:55 - PHP Version: 8.2.12
+2025-05-14 19:51:55 - Session ID: 7fk8apkk6gn3u9etqfh0ka31s0
+2025-05-14 19:51:55 - Session data: Array
+(
+    [user_id] => 10
+    [role] => technician
+    [username] => tech_two
+)
+
+2025-05-14 19:51:55 - Received POST request
+2025-05-14 19:51:55 - POST data: Array
+(
+    [appointment_id] => 114
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Bed Bugs
+            [1] => Cockroaches
+            [2] => Disinfect Area
+        )
+
+    [other_pest_type] => 
+    [problem_area] => AAAAA
+    [notes] => AAAA
+    [recommendation] => AAAAAAAA
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 01:51
+    [frequency] => monthly
+    [selected_chemicals] => [{"id":24,"name":"Cypermethrin E","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 19:51:55 - Validated data:
+2025-05-14 19:51:55 - appointment_id: 114
+2025-05-14 19:51:55 - area: 100
+2025-05-14 19:51:55 - end_time: 19:51:55
+2025-05-14 19:51:55 - Database connection successful
+2025-05-14 19:51:55 - Appointment found with ID: 114
+2025-05-14 19:51:55 - Report inserted successfully with ID: 90
+2025-05-14 19:51:55 - Appointment status updated successfully
+2025-05-14 22:11:53 - Direct submit script started
+2025-05-14 22:11:53 - PHP Version: 8.2.12
+2025-05-14 22:11:53 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-14 22:11:53 - Session data: Array
+(
+    [user_id] => 10
+    [role] => technician
+    [username] => tech_two
+)
+
+2025-05-14 22:11:53 - Received POST request
+2025-05-14 22:11:53 - POST data: Array
+(
+    [appointment_id] => 115
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Ants
+            [1] => Bed Bugs
+            [2] => Cockroaches
+        )
+
+    [other_pest_type] => 
+    [problem_area] => asdasd
+    [notes] => asdasdasdas
+    [recommendation] => asdasdasd
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 04:11
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":34,"name":"Cypermethrin Z","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 22:11:53 - Validated data:
+2025-05-14 22:11:53 - appointment_id: 115
+2025-05-14 22:11:53 - area: 100
+2025-05-14 22:11:53 - end_time: 22:11:53
+2025-05-14 22:11:53 - Database connection successful
+2025-05-14 22:11:53 - Appointment found with ID: 115
+2025-05-14 22:11:53 - Report inserted successfully with ID: 92
+2025-05-14 22:11:53 - Appointment status updated successfully
+2025-05-14 22:16:37 - Direct submit script started
+2025-05-14 22:16:37 - PHP Version: 8.2.12
+2025-05-14 22:16:37 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-14 22:16:37 - Session data: Array
+(
+    [user_id] => 10
+    [role] => technician
+    [username] => tech_two
+)
+
+2025-05-14 22:16:37 - Received POST request
+2025-05-14 22:16:37 - POST data: Array
+(
+    [appointment_id] => 117
+    [area] => 200
+    [pest_types] => Array
+        (
+            [0] => Bed Bugs
+            [1] => Cockroaches
+            [2] => Disinfect Area
+        )
+
+    [other_pest_type] => 
+    [problem_area] => aaa
+    [notes] => aaaa
+    [recommendation] => aaaa
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 04:16
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":34,"name":"Cypermethrin Z","type":"Insecticide","dosage":40,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 22:16:37 - Validated data:
+2025-05-14 22:16:37 - appointment_id: 117
+2025-05-14 22:16:37 - area: 200
+2025-05-14 22:16:37 - end_time: 22:16:37
+2025-05-14 22:16:37 - Database connection successful
+2025-05-14 22:16:37 - Appointment found with ID: 117
+2025-05-14 22:16:37 - Report inserted successfully with ID: 93
+2025-05-14 22:16:37 - Appointment status updated successfully
+2025-05-14 22:23:40 - Direct submit script started
+2025-05-14 22:23:40 - PHP Version: 8.2.12
+2025-05-14 22:23:40 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-14 22:23:40 - Session data: Array
+(
+    [user_id] => 16
+    [role] => technician
+    [username] => tech_three
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51] => {"success":true,"message":"Available chemicals retrieved successfully","chemicals":[{"id":34,"chemical_name":"Cypermethrin Z","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-05-16","status":"In Stock","expiration_date_formatted":"May 16, 2025","days_until_expiry":1},{"id":24,"chemical_name":"Cypermethrin E","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.57","unit":"Liters","expiration_date":"2025-05-28","status":"In Stock","expiration_date_formatted":"May 28, 2025","days_until_expiry":13},{"id":28,"chemical_name":"Cypermethrin A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.52","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":26},{"id":29,"chemical_name":"Cypermethrin C","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":26},{"id":31,"chemical_name":"Imidaclopred B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.09","unit":"Liters","expiration_date":"2025-06-13","status":"Low Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":29},{"id":32,"chemical_name":"Imidaclopred A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"12.00","unit":"Liters","expiration_date":"2025-06-13","status":"In Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":29},{"id":33,"chemical_name":"Cypermethrin B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-15","status":"In Stock","expiration_date_formatted":"Jun 15, 2025","days_until_expiry":31},{"id":18,"chemical_name":"Fipronil A","type":"Insecticide","target_pest":"Termites","quantity":"14.03","unit":"Liters","expiration_date":"2026-04-27","status":"In Stock","expiration_date_formatted":"Apr 27, 2026","days_until_expiry":347}],"timestamp":1747254183}
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51_timestamp] => 1747254183
+)
+
+2025-05-14 22:23:40 - Received POST request
+2025-05-14 22:23:40 - POST data: Array
+(
+    [appointment_id] => 118
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Ants
+            [1] => Bed Bugs
+            [2] => Cockroaches
+        )
+
+    [other_pest_type] => 
+    [problem_area] => aaaa
+    [notes] => aaaa
+    [recommendation] => aaaaa
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 04:23
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":34,"name":"Cypermethrin Z","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 22:23:40 - Validated data:
+2025-05-14 22:23:40 - appointment_id: 118
+2025-05-14 22:23:40 - area: 100
+2025-05-14 22:23:40 - end_time: 22:23:40
+2025-05-14 22:23:40 - Database connection successful
+2025-05-14 22:23:40 - Appointment found with ID: 118
+2025-05-14 22:23:40 - Report inserted successfully with ID: 94
+2025-05-14 22:23:40 - Appointment status updated successfully
+2025-05-14 22:23:40 - Sending notifications for report ID: 94
+2025-05-14 22:23:40 - Technician ID: 16, Name: tech_three
+2025-05-14 22:23:40 - Client ID: 9, Name: Paul Klarence A. De Guzman
+2025-05-14 22:23:40 - Client notification result: success
+2025-05-14 22:23:40 - Sending notification to admin ID: 1
+2025-05-14 22:23:40 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=94, technician_name=tech_three
+2025-05-14 22:23:40 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:23:40 - Admin notification sent successfully to admin ID: 1
+2025-05-14 22:23:40 - Sending notification to admin ID: 2
+2025-05-14 22:23:40 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=94, technician_name=tech_three
+2025-05-14 22:23:40 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:23:40 - Admin notification sent successfully to admin ID: 2
+2025-05-14 22:23:40 - Sending notification to admin ID: 3
+2025-05-14 22:23:40 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=94, technician_name=tech_three
+2025-05-14 22:23:40 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:23:40 - Admin notification sent successfully to admin ID: 3
+2025-05-14 22:23:40 - Total admin notifications sent: 3
+2025-05-14 22:33:10 - Direct submit script started
+2025-05-14 22:33:10 - PHP Version: 8.2.12
+2025-05-14 22:33:10 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-14 22:33:10 - Session data: Array
+(
+    [user_id] => 10
+    [role] => technician
+    [username] => tech_two
+)
+
+2025-05-14 22:33:10 - Received POST request
+2025-05-14 22:33:10 - POST data: Array
+(
+    [appointment_id] => 119
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Ants
+            [1] => Bed Bugs
+            [2] => bee hive 1
+            [3] => Cockroaches
+            [4] => Mosquitoes
+        )
+
+    [other_pest_type] => 
+    [problem_area] => kitchen
+    [notes] => MARAMI 
+    [recommendation] => MARAMI
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-13
+    [preferred_time] => 04:32
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":34,"name":"Cypermethrin Z","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 22:33:10 - Validated data:
+2025-05-14 22:33:10 - appointment_id: 119
+2025-05-14 22:33:10 - area: 100
+2025-05-14 22:33:10 - end_time: 22:33:10
+2025-05-14 22:33:10 - Database connection successful
+2025-05-14 22:33:10 - Appointment found with ID: 119
+2025-05-14 22:33:10 - Report inserted successfully with ID: 95
+2025-05-14 22:33:10 - Appointment status updated successfully
+2025-05-14 22:33:10 - Sending notifications for report ID: 95
+2025-05-14 22:33:10 - Technician ID: 10, Name: tech_two
+2025-05-14 22:33:10 - Client ID: 9, Name: Paul Klarence A. De Guzman
+2025-05-14 22:33:10 - Client notification result: success
+2025-05-14 22:33:10 - Sending notification to admin ID: 1
+2025-05-14 22:33:10 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=95, technician_name=tech_two
+2025-05-14 22:33:10 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:33:10 - Admin notification sent successfully to admin ID: 1
+2025-05-14 22:33:10 - Sending notification to admin ID: 2
+2025-05-14 22:33:10 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=95, technician_name=tech_two
+2025-05-14 22:33:10 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:33:10 - Admin notification sent successfully to admin ID: 2
+2025-05-14 22:33:10 - Sending notification to admin ID: 3
+2025-05-14 22:33:10 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=95, technician_name=tech_two
+2025-05-14 22:33:10 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:33:10 - Admin notification sent successfully to admin ID: 3
+2025-05-14 22:33:10 - Total admin notifications sent: 3
+2025-05-14 22:51:37 - Direct submit script started
+2025-05-14 22:51:37 - PHP Version: 8.2.12
+2025-05-14 22:51:37 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-14 22:51:37 - Session data: Array
+(
+    [user_id] => 16
+    [role] => technician
+    [username] => tech_three
+)
+
+2025-05-14 22:51:37 - Received POST request
+2025-05-14 22:51:37 - POST data: Array
+(
+    [appointment_id] => 120
+    [area] => 200
+    [pest_types] => Array
+        (
+            [0] => Ants
+            [1] => Bed Bugs
+            [2] => bee hive 1
+            [3] => Cockroaches
+        )
+
+    [other_pest_type] => 
+    [problem_area] => kitchen
+    [notes] => sdfsdfsdf
+    [recommendation] => sdfsdfsdf
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 04:51
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":34,"name":"Cypermethrin Z","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-14 22:51:37 - Validated data:
+2025-05-14 22:51:37 - appointment_id: 120
+2025-05-14 22:51:37 - area: 200
+2025-05-14 22:51:37 - end_time: 22:51:37
+2025-05-14 22:51:37 - Database connection successful
+2025-05-14 22:51:37 - Appointment found with ID: 120
+2025-05-14 22:51:37 - Report inserted successfully with ID: 96
+2025-05-14 22:51:37 - Appointment status updated successfully
+2025-05-14 22:51:37 - Sending notifications for report ID: 96
+2025-05-14 22:51:37 - Technician ID: 16, Name: tech_three
+2025-05-14 22:51:37 - Client ID: 9, Name: Paul Klarence A. De Guzman
+2025-05-14 22:51:37 - Client notification result: success
+2025-05-14 22:51:37 - Sending notification to admin ID: 1
+2025-05-14 22:51:37 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=96, technician_name=tech_three
+2025-05-14 22:51:37 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:51:37 - Admin notification sent successfully to admin ID: 1
+2025-05-14 22:51:37 - Sending notification to admin ID: 2
+2025-05-14 22:51:37 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=96, technician_name=tech_three
+2025-05-14 22:51:37 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:51:37 - Admin notification sent successfully to admin ID: 2
+2025-05-14 22:51:37 - Sending notification to admin ID: 3
+2025-05-14 22:51:37 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=96, technician_name=tech_three
+2025-05-14 22:51:37 - notifyAdminAboutNewReport returned: true
+2025-05-14 22:51:37 - Admin notification sent successfully to admin ID: 3
+2025-05-14 22:51:37 - Total admin notifications sent: 3
+2025-05-15 00:12:35 - Direct submit script started
+2025-05-15 00:12:35 - PHP Version: 8.2.12
+2025-05-15 00:12:35 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-15 00:12:35 - Session data: Array
+(
+    [user_id] => 1
+    [role] => technician
+    [username] => tech_one
+    [checklist_shown_date] => 2025-05-14
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51] => {"success":true,"message":"Available chemicals retrieved successfully","chemicals":[{"id":34,"chemical_name":"Cypermethrin Z","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-05-16","status":"In Stock","expiration_date_formatted":"May 16, 2025","days_until_expiry":0},{"id":24,"chemical_name":"Cypermethrin E","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.44","unit":"Liters","expiration_date":"2025-05-28","status":"In Stock","expiration_date_formatted":"May 28, 2025","days_until_expiry":12},{"id":28,"chemical_name":"Cypermethrin A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.52","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":25},{"id":29,"chemical_name":"Cypermethrin C","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":25},{"id":31,"chemical_name":"Imidaclopred B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.09","unit":"Liters","expiration_date":"2025-06-13","status":"Low Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":28},{"id":32,"chemical_name":"Imidaclopred A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"12.00","unit":"Liters","expiration_date":"2025-06-13","status":"In Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":28},{"id":33,"chemical_name":"Cypermethrin B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-15","status":"In Stock","expiration_date_formatted":"Jun 15, 2025","days_until_expiry":30},{"id":18,"chemical_name":"Fipronil A","type":"Insecticide","target_pest":"Termites","quantity":"14.03","unit":"Liters","expiration_date":"2026-04-27","status":"In Stock","expiration_date_formatted":"Apr 27, 2026","days_until_expiry":346}],"timestamp":1747260604}
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51_timestamp] => 1747260604
+)
+
+2025-05-15 00:12:35 - Received POST request
+2025-05-15 00:12:35 - POST data: Array
+(
+    [appointment_id] => 127
+    [area] => 200
+    [pest_types] => Array
+        (
+            [0] => Bed Bugs
+            [1] => bee hive 1
+            [2] => Cockroaches
+        )
+
+    [other_pest_type] => 
+    [problem_area] => kitchen
+    [notes] => aaaaa
+    [recommendation] => aaaaa
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 06:12
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":34,"name":"Cypermethrin Z","type":"Insecticide","dosage":20,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-15 00:12:35 - Validated data:
+2025-05-15 00:12:35 - appointment_id: 127
+2025-05-15 00:12:35 - area: 200
+2025-05-15 00:12:35 - end_time: 00:12:35
+2025-05-15 00:12:35 - Database connection successful
+2025-05-15 00:12:35 - Appointment found with ID: 127
+2025-05-15 00:12:35 - Report inserted successfully with ID: 97
+2025-05-15 00:12:35 - Appointment status updated successfully
+2025-05-15 00:12:35 - Sending notifications for report ID: 97
+2025-05-15 00:12:35 - Technician ID: 1, Name: tech_one
+2025-05-15 00:12:35 - Client ID: 13, Name: Zak Agbalo
+2025-05-15 00:12:35 - Client notification result: success
+2025-05-15 00:12:35 - Sending notification to admin ID: 1
+2025-05-15 00:12:35 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=97, technician_name=tech_one
+2025-05-15 00:12:35 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:12:35 - Admin notification sent successfully to admin ID: 1
+2025-05-15 00:12:35 - Sending notification to admin ID: 2
+2025-05-15 00:12:35 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=97, technician_name=tech_one
+2025-05-15 00:12:35 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:12:35 - Admin notification sent successfully to admin ID: 2
+2025-05-15 00:12:35 - Sending notification to admin ID: 3
+2025-05-15 00:12:35 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=97, technician_name=tech_one
+2025-05-15 00:12:35 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:12:35 - Admin notification sent successfully to admin ID: 3
+2025-05-15 00:12:35 - Total admin notifications sent: 3
+2025-05-15 00:28:44 - Direct submit script started
+2025-05-15 00:28:44 - PHP Version: 8.2.12
+2025-05-15 00:28:44 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-15 00:28:44 - Session data: Array
+(
+    [user_id] => 1
+    [role] => technician
+    [username] => tech_one
+    [checklist_shown_date] => 2025-05-15
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51] => {"success":true,"message":"Available chemicals retrieved successfully","chemicals":[{"id":34,"chemical_name":"Cypermethrin Z","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.96","unit":"Liters","expiration_date":"2025-05-16","status":"Low Stock","expiration_date_formatted":"May 16, 2025","days_until_expiry":0},{"id":24,"chemical_name":"Cypermethrin E","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.44","unit":"Liters","expiration_date":"2025-05-28","status":"In Stock","expiration_date_formatted":"May 28, 2025","days_until_expiry":12},{"id":28,"chemical_name":"Cypermethrin A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.48","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":25},{"id":29,"chemical_name":"Cypermethrin C","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":25},{"id":31,"chemical_name":"Imidaclopred B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.09","unit":"Liters","expiration_date":"2025-06-13","status":"Low Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":28},{"id":32,"chemical_name":"Imidaclopred A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"12.00","unit":"Liters","expiration_date":"2025-06-13","status":"In Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":28},{"id":33,"chemical_name":"Cypermethrin B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-15","status":"In Stock","expiration_date_formatted":"Jun 15, 2025","days_until_expiry":30},{"id":18,"chemical_name":"Fipronil A","type":"Insecticide","target_pest":"Termites","quantity":"14.03","unit":"Liters","expiration_date":"2026-04-27","status":"In Stock","expiration_date_formatted":"Apr 27, 2026","days_until_expiry":346}],"timestamp":1747261556}
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51_timestamp] => 1747261556
+)
+
+2025-05-15 00:28:44 - Received POST request
+2025-05-15 00:28:44 - POST data: Array
+(
+    [appointment_id] => 128
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Bed Bugs
+            [1] => bee hive 1
+            [2] => Cockroaches
+            [3] => Mice/Rats
+            [4] => Mosquitoes
+        )
+
+    [other_pest_type] => 
+    [problem_area] => asdasd
+    [notes] => aaaaaa
+    [recommendation] => aaaaaaaa
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 06:28
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":"34","name":"Cypermethrin Z","type":"Insecticide","dosage":"40","dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-15 00:28:44 - Validated data:
+2025-05-15 00:28:44 - appointment_id: 128
+2025-05-15 00:28:44 - area: 100
+2025-05-15 00:28:44 - end_time: 00:28:44
+2025-05-15 00:28:44 - Database connection successful
+2025-05-15 00:28:44 - Appointment found with ID: 128
+2025-05-15 00:28:44 - Report inserted successfully with ID: 98
+2025-05-15 00:28:44 - Appointment status updated successfully
+2025-05-15 00:28:44 - Sending notifications for report ID: 98
+2025-05-15 00:28:44 - Technician ID: 1, Name: tech_one
+2025-05-15 00:28:44 - Client ID: 13, Name: Zak Agbalo
+2025-05-15 00:28:44 - Client notification result: success
+2025-05-15 00:28:44 - Sending notification to admin ID: 1
+2025-05-15 00:28:44 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=98, technician_name=tech_one
+2025-05-15 00:28:44 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:28:44 - Admin notification sent successfully to admin ID: 1
+2025-05-15 00:28:44 - Sending notification to admin ID: 2
+2025-05-15 00:28:44 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=98, technician_name=tech_one
+2025-05-15 00:28:44 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:28:44 - Admin notification sent successfully to admin ID: 2
+2025-05-15 00:28:44 - Sending notification to admin ID: 3
+2025-05-15 00:28:44 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=98, technician_name=tech_one
+2025-05-15 00:28:44 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:28:44 - Admin notification sent successfully to admin ID: 3
+2025-05-15 00:28:44 - Total admin notifications sent: 3
+2025-05-15 00:45:06 - Direct submit script started
+2025-05-15 00:45:06 - PHP Version: 8.2.12
+2025-05-15 00:45:06 - Session ID: 49bb39234lmpeurlblr1kkrqch
+2025-05-15 00:45:06 - Session data: Array
+(
+    [user_id] => 1
+    [role] => technician
+    [username] => tech_one
+    [checklist_shown_date] => 2025-05-15
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51] => {"success":true,"message":"Available chemicals retrieved successfully","chemicals":[{"id":34,"chemical_name":"Cypermethrin Z","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.96","unit":"Liters","expiration_date":"2025-05-16","status":"Low Stock","expiration_date_formatted":"May 16, 2025","days_until_expiry":0},{"id":24,"chemical_name":"Cypermethrin E","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.42","unit":"Liters","expiration_date":"2025-05-28","status":"In Stock","expiration_date_formatted":"May 28, 2025","days_until_expiry":12},{"id":28,"chemical_name":"Cypermethrin A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.48","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":25},{"id":29,"chemical_name":"Cypermethrin C","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":25},{"id":31,"chemical_name":"Imidaclopred B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.09","unit":"Liters","expiration_date":"2025-06-13","status":"Low Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":28},{"id":32,"chemical_name":"Imidaclopred A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"12.00","unit":"Liters","expiration_date":"2025-06-13","status":"In Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":28},{"id":33,"chemical_name":"Cypermethrin B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-15","status":"In Stock","expiration_date_formatted":"Jun 15, 2025","days_until_expiry":30},{"id":18,"chemical_name":"Fipronil A","type":"Insecticide","target_pest":"Termites","quantity":"14.03","unit":"Liters","expiration_date":"2026-04-27","status":"In Stock","expiration_date_formatted":"Apr 27, 2026","days_until_expiry":346}],"timestamp":1747262546}
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51_timestamp] => 1747262546
+)
+
+2025-05-15 00:45:06 - Received POST request
+2025-05-15 00:45:06 - POST data: Array
+(
+    [appointment_id] => 129
+    [area] => 100
+    [pest_types] => Array
+        (
+            [0] => Bed Bugs
+            [1] => bee hive 1
+            [2] => Cockroaches
+            [3] => Mice/Rats
+        )
+
+    [other_pest_type] => 
+    [problem_area] => kitchen
+    [notes] => aaa
+    [recommendation] => aaa
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-15
+    [preferred_time] => 06:44
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":"34","name":"Cypermethrin Z","type":"Insecticide","dosage":"40","dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-15 00:45:06 - Validated data:
+2025-05-15 00:45:06 - appointment_id: 129
+2025-05-15 00:45:06 - area: 100
+2025-05-15 00:45:06 - end_time: 00:45:06
+2025-05-15 00:45:06 - Database connection successful
+2025-05-15 00:45:06 - Appointment found with ID: 129
+2025-05-15 00:45:06 - Report inserted successfully with ID: 99
+2025-05-15 00:45:06 - Appointment status updated successfully
+2025-05-15 00:45:06 - Sending notifications for report ID: 99
+2025-05-15 00:45:06 - Technician ID: 1, Name: tech_one
+2025-05-15 00:45:06 - Client ID: 14, Name: Zak Agbalo
+2025-05-15 00:45:06 - Client notification result: success
+2025-05-15 00:45:06 - Sending notification to admin ID: 1
+2025-05-15 00:45:06 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=99, technician_name=tech_one
+2025-05-15 00:45:06 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:45:06 - Admin notification sent successfully to admin ID: 1
+2025-05-15 00:45:06 - Sending notification to admin ID: 2
+2025-05-15 00:45:06 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=99, technician_name=tech_one
+2025-05-15 00:45:06 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:45:06 - Admin notification sent successfully to admin ID: 2
+2025-05-15 00:45:06 - Sending notification to admin ID: 3
+2025-05-15 00:45:06 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=99, technician_name=tech_one
+2025-05-15 00:45:06 - notifyAdminAboutNewReport returned: true
+2025-05-15 00:45:06 - Admin notification sent successfully to admin ID: 3
+2025-05-15 00:45:06 - Total admin notifications sent: 3
+2025-05-18 15:24:47 - Direct submit script started
+2025-05-18 15:24:47 - PHP Version: 8.2.12
+2025-05-18 15:24:47 - Session ID: 2bb1gj7odddlut3gn4kqde4e1t
+2025-05-18 15:24:47 - Session data: Array
+(
+    [user_id] => 1
+    [role] => technician
+    [username] => tech_one
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51] => {"success":true,"message":"Available chemicals retrieved successfully","chemicals":[{"id":34,"chemical_name":"Cypermethrin Z","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.94","unit":"Liters","expiration_date":"2025-05-16","status":"Low Stock","expiration_date_formatted":"May 16, 2025","days_until_expiry":-2},{"id":24,"chemical_name":"Cypermethrin E","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.42","unit":"Liters","expiration_date":"2025-05-28","status":"In Stock","expiration_date_formatted":"May 28, 2025","days_until_expiry":9},{"id":28,"chemical_name":"Cypermethrin A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"19.48","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":22},{"id":29,"chemical_name":"Cypermethrin C","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-10","status":"In Stock","expiration_date_formatted":"Jun 10, 2025","days_until_expiry":22},{"id":31,"chemical_name":"Imidaclopred B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"9.09","unit":"Liters","expiration_date":"2025-06-13","status":"Low Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":25},{"id":32,"chemical_name":"Imidaclopred A","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"12.00","unit":"Liters","expiration_date":"2025-06-13","status":"In Stock","expiration_date_formatted":"Jun 13, 2025","days_until_expiry":25},{"id":33,"chemical_name":"Cypermethrin B","type":"Insecticide","target_pest":"Crawling & Flying Pest","quantity":"10.00","unit":"Liters","expiration_date":"2025-06-15","status":"In Stock","expiration_date_formatted":"Jun 15, 2025","days_until_expiry":27},{"id":18,"chemical_name":"Fipronil A","type":"Insecticide","target_pest":"Termites","quantity":"14.03","unit":"Liters","expiration_date":"2026-04-27","status":"In Stock","expiration_date_formatted":"Apr 27, 2026","days_until_expiry":343}],"timestamp":1747574400}
+    [chemical_inventory_a181a603769c1f98ad927e7367c7aa51_timestamp] => 1747574400
+)
+
+2025-05-18 15:24:47 - Received POST request
+2025-05-18 15:24:47 - POST data: Array
+(
+    [appointment_id] => 126
+    [area] => 300
+    [pest_types] => Array
+        (
+            [0] => Bed Bugs
+            [1] => bee hive 1
+            [2] => Cockroaches
+            [3] => Mice/Rats
+        )
+
+    [other_pest_type] => 
+    [problem_area] => aaaa
+    [notes] => aaaaa
+    [recommendation] => ssssssss
+    [type_of_work] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [other_work_type] => 
+    [preferred_date] => 2025-05-18
+    [preferred_time] => 21:21
+    [frequency] => weekly
+    [selected_chemicals] => [{"id":24,"name":"Cypermethrin E","type":"Insecticide","dosage":40,"dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]
+)
+
+2025-05-18 15:24:47 - Validated data:
+2025-05-18 15:24:47 - appointment_id: 126
+2025-05-18 15:24:47 - area: 300
+2025-05-18 15:24:47 - end_time: 15:24:47
+2025-05-18 15:24:47 - Database connection successful
+2025-05-18 15:24:47 - Appointment found with ID: 126
+2025-05-18 15:24:47 - Report inserted successfully with ID: 100
+2025-05-18 15:24:47 - Appointment status updated successfully
+2025-05-18 15:24:47 - Sending notifications for report ID: 100
+2025-05-18 15:24:47 - Technician ID: 1, Name: tech_one
+2025-05-18 15:24:47 - Client ID: 13, Name: Zak Agbalo
+2025-05-18 15:24:47 - Client notification result: success
+2025-05-18 15:24:47 - Sending notification to admin ID: 1
+2025-05-18 15:24:47 - Calling notifyAdminAboutNewReport with admin_id=1, report_id=100, technician_name=tech_one
+2025-05-18 15:24:47 - notifyAdminAboutNewReport returned: true
+2025-05-18 15:24:47 - Admin notification sent successfully to admin ID: 1
+2025-05-18 15:24:47 - Sending notification to admin ID: 2
+2025-05-18 15:24:47 - Calling notifyAdminAboutNewReport with admin_id=2, report_id=100, technician_name=tech_one
+2025-05-18 15:24:47 - notifyAdminAboutNewReport returned: true
+2025-05-18 15:24:47 - Admin notification sent successfully to admin ID: 2
+2025-05-18 15:24:47 - Sending notification to admin ID: 3
+2025-05-18 15:24:47 - Calling notifyAdminAboutNewReport with admin_id=3, report_id=100, technician_name=tech_one
+2025-05-18 15:24:47 - notifyAdminAboutNewReport returned: true
+2025-05-18 15:24:47 - Admin notification sent successfully to admin ID: 3
+2025-05-18 15:24:47 - Total admin notifications sent: 3

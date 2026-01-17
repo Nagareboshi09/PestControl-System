@@ -1,0 +1,108 @@
+/* Import variables */
+@import url('variables.css');
+
+/* Footer Styles */
+.footer {
+    background-color: var(--card-color);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+    margin-left: var(--sidebar-width);
+    transition: var(--transition-normal);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-right: var(--spacing-sm);
+}
+
+.footer-logo h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-social a {
+    color: var(--text-secondary);
+    font-size: var(--font-size-xl);
+    transition: var(--transition-fast);
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-left: 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: var(--spacing-md);
+    }
+}

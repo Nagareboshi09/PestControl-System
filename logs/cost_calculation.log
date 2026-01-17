@@ -1,0 +1,63 @@
+[2025-05-14 09:02:26] Cost calculation request received: {"report_id":"88","base_rate":"20"}
+[2025-05-14 09:02:26] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 09:02:28] Cost calculation successful: Cost = 48000
+[2025-05-14 15:08:48] Cost calculation request received: {"report_id":"87","base_rate":"20"}
+[2025-05-14 15:08:48] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 15:08:48] Cost calculation successful: Cost = 24000
+[2025-05-14 15:16:55] Cost calculation request received: {"report_id":"88","base_rate":"20"}
+[2025-05-14 15:16:55] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 15:16:55] Cost calculation successful: Cost = 20000
+[2025-05-14 19:49:17] Cost calculation request received: {"report_id":"89","base_rate":"20"}
+[2025-05-14 19:49:17] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike","success":"Availability saved successfully."}
+[2025-05-14 19:49:17] Cost calculation successful: Cost = 104000
+[2025-05-14 22:48:24] Cost calculation request received: {"report_id":"95","base_rate":"20"}
+[2025-05-14 22:48:24] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:48:24] Cost calculation successful: Cost = 104000
+[2025-05-14 22:52:20] Cost calculation request received: {"report_id":"96","base_rate":"20"}
+[2025-05-14 22:52:20] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:52:20] Cost calculation successful: Cost = 208000
+[2025-05-14 22:52:48] Cost calculation request received: {"report_id":"96","base_rate":"20"}
+[2025-05-14 22:52:48] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:52:48] Cost calculation successful: Cost = 208000
+[2025-05-14 22:52:49] Cost calculation request received: {"report_id":"96","base_rate":"20"}
+[2025-05-14 22:52:49] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:52:49] Cost calculation successful: Cost = 208000
+[2025-05-14 22:52:54] Cost calculation request received: {"report_id":"96","base_rate":"20"}
+[2025-05-14 22:52:54] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:52:54] Cost calculation successful: Cost = 208000
+[2025-05-14 22:52:59] Cost calculation request received: {"report_id":"96","base_rate":"50"}
+[2025-05-14 22:52:59] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:52:59] Cost calculation successful: Cost = 520000
+[2025-05-14 22:53:03] Cost calculation request received: {"report_id":"96","base_rate":"20"}
+[2025-05-14 22:53:03] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-14 22:53:03] Cost calculation successful: Cost = 208000
+[2025-05-15 00:13:37] Cost calculation request received: {"report_id":"97","base_rate":"20"}
+[2025-05-15 00:13:37] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike","client_id":13,"email":"agbalo@gmail.com","fullname":"Zak Agbalo"}
+[2025-05-15 00:13:37] Cost calculation successful: Cost = 208000
+[2025-05-15 00:29:56] Cost calculation request received: {"report_id":"98","base_rate":"20"}
+[2025-05-15 00:29:56] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike","client_id":13,"email":"agbalo@gmail.com","fullname":"Zak Agbalo"}
+[2025-05-15 00:29:56] Cost calculation successful: Cost = 104000
+[2025-05-15 00:46:01] Cost calculation request received: {"report_id":"99","base_rate":"20"}
+[2025-05-15 00:46:01] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-15 00:46:01] Cost calculation successful: Cost = 104000
+[2025-05-15 00:46:58] Cost calculation request received: {"report_id":"99","base_rate":"20"}
+[2025-05-15 00:46:58] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-15 00:46:58] Cost calculation successful: Cost = 104000
+[2025-05-18 15:25:24] Cost calculation request received: {"report_id":"100","base_rate":"20"}
+[2025-05-18 15:25:24] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-18 15:25:24] Cost calculation successful: Cost = 312000
+[2025-05-18 15:25:35] Cost calculation request received: {"report_id":"100","base_rate":"20"}
+[2025-05-18 15:25:35] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-18 15:25:35] Cost calculation successful: Cost = 312000
+[2025-05-18 15:25:36] Cost calculation request received: {"report_id":"100","base_rate":"20"}
+[2025-05-18 15:25:36] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-18 15:25:36] Cost calculation successful: Cost = 312000
+[2025-05-18 15:25:37] Cost calculation request received: {"report_id":"100","base_rate":"20"}
+[2025-05-18 15:25:37] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-18 15:25:37] Cost calculation successful: Cost = 312000
+[2025-05-18 15:25:50] Cost calculation request received: {"report_id":"100","base_rate":"20"}
+[2025-05-18 15:25:50] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-18 15:25:50] Cost calculation successful: Cost = 312000
+[2025-05-18 15:25:51] Cost calculation request received: {"report_id":"100","base_rate":"20"}
+[2025-05-18 15:25:51] Session data: {"user_id":1,"role":"office_staff","username":"admin_mike"}
+[2025-05-18 15:25:51] Cost calculation successful: Cost = 312000

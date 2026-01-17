@@ -1,0 +1,203 @@
+/**
+ * Common CSS for all technician-side pages
+ * This file contains shared styles to ensure consistency across all technician pages
+ */
+
+/* Import variables */
+@import url('variables.css');
+
+/* Enhanced Page Header */
+.dashboard-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--border-radius-md);
+}
+
+.dashboard-header h1 {
+    margin-bottom: 0;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.dashboard-header p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--font-size-md);
+}
+
+/* Job Section */
+.job-section {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    transition: var(--transition-normal);
+}
+
+.job-section:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.job-section h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.job-section .badge {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-weight: 500;
+}
+
+/* Client Info */
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--background-color);
+    border-radius: var(--border-radius-md);
+}
+
+.client-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--spacing-md);
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.client-details {
+    flex: 1;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border-bottom: none;
+    padding: var(--spacing-lg);
+}
+
+.modal-title {
+    color: white;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: var(--spacing-lg);
+}
+
+.modal-footer {
+    border-top: none;
+    padding: var(--spacing-lg);
+}
+
+/* Checklist Styling */
+.checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-fast);
+}
+
+.checklist-item:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.checklist-item input[type="checkbox"] {
+    margin-right: var(--spacing-sm);
+}
+
+/* Status Badges */
+.badge-pending {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.badge-completed {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.badge-cancelled {
+    background-color: var(--error-color);
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Chemical Recommendations Styling */
+.chemical-recommendations-container {
+    margin-top: var(--spacing-md);
+}
+
+.chemical-recommendations-container table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.chemical-recommendations-container th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.chemical-recommendations-container td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid #e2e8f0;
+}
+
+.chemical-recommendations-container tr:nth-child(even) {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.chemical-recommendations-container tr:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard-header {
+        padding: var(--spacing-md);
+    }
+
+    .job-section {
+        padding: var(--spacing-md);
+    }
+
+    .chemical-recommendations-container {
+        overflow-x: auto;
+    }
+}

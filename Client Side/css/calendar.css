@@ -1,0 +1,338 @@
+/**
+ * Calendar Styles for Client Side
+ * Matching the Admin Side calendar design
+ */
+
+/* Calendar Container */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+/* Calendar Card */
+.calendar-card {
+    background: var(--card-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    transition: var(--transition-normal);
+    overflow: hidden;
+}
+
+.calendar-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+/* Calendar Header */
+.calendar-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.calendar-nav h3 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+}
+
+.calendar-nav button {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.calendar-nav button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+/* Calendar Day Headers */
+.calendar-day:nth-child(-n+7) {
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: var(--spacing-sm) 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Calendar Days */
+.calendar-day {
+    padding: var(--spacing-sm);
+    text-align: center;
+    border-radius: var(--border-radius-sm);
+    font-weight: 500;
+    transition: var(--transition-fast);
+    position: relative;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: var(--text-primary);
+}
+
+.calendar-day:not(.empty):not(:nth-child(-n+7)) {
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.calendar-day.empty {
+    background: transparent;
+    border: none;
+}
+
+.calendar-day.past {
+    background-color: #f5f5f5;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #eee;
+}
+
+.calendar-day.today {
+    border: 2px solid var(--primary-color);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.calendar-day.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.calendar-day:not(.empty):not(:nth-child(-n+7)):not(.past):hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Event Indicators */
+.event-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 2px;
+    display: inline-block;
+}
+
+.event-indicator.appointment {
+    background-color: var(--primary-color);
+}
+
+.event-indicator.job {
+    background-color: var(--success-color);
+}
+
+.event-indicator.completed {
+    background-color: var(--dark-color);
+}
+
+/* Event Dots Container */
+.event-dots {
+    display: flex;
+    gap: 3px;
+    margin-top: 3px;
+    justify-content: center;
+}
+
+/* Time Slots */
+.time-slots-card {
+    background: var(--card-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    transition: var(--transition-normal);
+    margin-top: var(--spacing-md);
+}
+
+.time-slots-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.time-slots-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+#selectedDateDisplay {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: var(--spacing-md);
+}
+
+.time-slot {
+    padding: var(--spacing-sm);
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    background-color: white;
+    color: var(--text-primary);
+}
+
+.time-slot:hover:not(.booked) {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.time-slot.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.time-slot.booked {
+    background-color: #f5f5f5;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #eee;
+    position: relative;
+}
+
+.time-slot.booked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Appointment Form */
+.appointment-form-card {
+    background: var(--card-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    transition: var(--transition-normal);
+    margin-top: var(--spacing-md);
+}
+
+.appointment-form-header {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.appointment-form-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.appointment-summary {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.appointment-summary p {
+    margin: var(--spacing-xs) 0;
+    color: var(--text-primary);
+}
+
+.appointment-summary i {
+    color: var(--primary-color);
+    margin-right: var(--spacing-sm);
+}
+
+/* Loading Indicator */
+.loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    color: var(--text-secondary);
+}
+
+.loading-indicator i {
+    margin-right: var(--spacing-sm);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .calendar-grid {
+        gap: 4px;
+    }
+
+    .calendar-day {
+        padding: var(--spacing-xs);
+        min-height: 35px;
+    }
+
+    .time-slots {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .calendar-nav h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .calendar-day {
+        min-height: 30px;
+        font-size: var(--font-size-sm);
+    }
+
+    .time-slots {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}
+
+/* Today Button */
+.today-button {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.today-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}

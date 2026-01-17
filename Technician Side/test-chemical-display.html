@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chemical Display</title>
+    <link href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Chemical Replacement Styles */
+        .replaced-chemical {
+            background-color: #fff8e1;
+            border-left: 3px solid #ffc107;
+        }
+
+        .replaced-chemical td:first-child {
+            position: relative;
+        }
+
+        .replaced-chemical .small.text-muted {
+            font-size: 0.75rem;
+            margin-top: 3px;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .replacement-options-container {
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .replacement-option {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .replacement-option:hover {
+            background-color: #f8f9fa;
+            border-color: #adb5bd;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25em 0.6em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+        }
+
+        .in-stock {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .low-stock {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .out-of-stock {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .expired-date {
+            color: #dc3545;
+        }
+
+        .chemicals-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .chemicals-table th, .chemicals-table td {
+            padding: 8px;
+            border: 1px solid #dee2e6;
+        }
+
+        .chemicals-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+
+        .chemicals-table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Test Chemical Display</h1>
+        <p>This page tests the display of chemical quantity and expiration date in the original recommendations table.</p>
+
+        <button id="testBtn" class="btn btn-primary mb-4">Test Chemical Display</button>
+
+        <!-- Original Recommendations Section -->
+        <div class="mb-4">
+            <h6 class="border-bottom pb-2 mb-3">Original Recommendations</h6>
+            <div class="small text-muted mb-2">
+                <i class="fas fa-exchange-alt me-1"></i> Click the "Replace" button to select an alternative chemical for each recommendation.
+            </div>
+            <div id="originalRecommendationsContainer" class="chemicals-table-container">
+                <table class="chemicals-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Chemical Name</th>
+                            <th>Type</th>
+                            <th>Target Pest</th>
+                            <th>Recommended Dosage</th>
+                            <th>Available Quantity</th>
+                            <th>Expiration</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="originalRecommendationsTable">
+                        <!-- Original recommendations will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert alert-info" id="testResult">
+            Click the "Test Chemical Display" button to run the test.
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Mock data for testing
+        let originalChemicals = [
+            {
+                id: "14",
+                name: "Fipronil",
+                type: "Insecticide",
+                target_pest: "Ants, Cockroaches, Bed Bugs",
+                dosage: "5",
+                dosage_unit: "ml",
+                index: 0
+            },
+            {
+                id: "26",
+                name: "Cypermethrin",
+                type: "Insecticide",
+                target_pest: "Crawling & Flying Pest",
+                dosage: "10",
+                dosage_unit: "ml",
+                index: 1
+            }
+        ];
+
+        let selectedChemicals = [...originalChemicals];
+        let availableChemicals = [];
+
+        // Function to fetch available chemicals from the server
+        function fetchAvailableChemicals() {
+            return new Promise((resolve, reject) => {
+                // Simulate API call with mock data
+                setTimeout(() => {
+                    availableChemicals = [
+                        {
+                            id: "14",
+                            chemical_name: "Fipronil",
+                            type: "Insecticide",
+                            target_pest: "Ants, Cockroaches, Bed Bugs",
+                            quantity: "25.5",
+                            unit: "ml",
+                            expiration_date: "2024-12-31",
+                            expiration_date_formatted: "Dec 31, 2024",
+                            status: "In Stock"
+                        },
+                        {
+                            id: "26",
+                            chemical_name: "Cypermethrin",
+                            type: "Insecticide",
+                            target_pest: "Crawling & Flying Pest",
+                            quantity: "8.75",
+                            unit: "ml",
+                            expiration_date: "2024-06-30",
+                            expiration_date_formatted: "Jun 30, 2024",
+                            status: "Low Stock"
+                        }
+                    ];
+                    resolve(availableChemicals);
+                }, 500);
+            });
+        }
+
+        // Function to populate the original recommendations table
+        function populateOriginalRecommendations() {
+            const table = document.getElementById('originalRecommendationsTable');
+            if (!table) return;
+
+            // Clear the table
+            table.innerHTML = '';
+
+            // Add each original chemical to the table
+            originalChemicals.forEach(chemical => {
+                // Find the matching chemical in availableChemicals to get the status
+                const availableChem = availableChemicals.find(ac =>
+                    ac.chemical_name === chemical.name && ac.type === chemical.type
+                );
+
+                // Determine status class and text
+                let statusText = availableChem ? availableChem.status : 'Unknown';
+                let statusClass = '';
+
+                if (statusText === 'In Stock') {
+                    statusClass = 'in-stock';
+                } else if (statusText === 'Low Stock') {
+                    statusClass = 'low-stock';
+                } else {
+                    statusClass = 'out-of-stock';
+                }
+
+                // Get quantity information
+                const quantity = availableChem ? `${availableChem.quantity} ${availableChem.unit}` : 'N/A';
+
+                // Format the expiration date if available
+                let formattedDate = 'N/A';
+                if (availableChem && availableChem.expiration_date) {
+                    const expirationDate = new Date(availableChem.expiration_date);
+                    formattedDate = expirationDate.toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                    });
+                }
+
+                // Check if chemical is expired
+                const isExpired = availableChem && new Date(availableChem.expiration_date) < new Date();
+
+                // Check if this chemical has been replaced
+                const replacementChem = selectedChemicals.find(selected =>
+                    selected.replacing === chemical.id && selected.id !== chemical.id
+                );
+                const isReplaced = !!replacementChem;
+
+                const row = document.createElement('tr');
+                if (isExpired) {
+                    row.classList.add('expired-chemical');
+                }
+
+                if (isReplaced) {
+                    row.classList.add('replaced-chemical');
+                }
+
+                // Prepare the chemical name cell content
+                let chemicalNameCell = `<strong>${chemical.name || 'N/A'}</strong>`;
+
+                // If this chemical has been replaced, show the replacement info
+                if (isReplaced && replacementChem) {
+                    chemicalNameCell = `
+                        <div class="d-flex align-items-center">
+                            <div class="text-decoration-line-through text-muted">${chemical.name || 'N/A'}</div>
+                            <div class="ms-2 badge bg-warning text-dark">
+                                <i class="fas fa-exchange-alt me-1"></i> Replaced
+                            </div>
+                        </div>
+                        <div class="small text-primary mt-1">
+                            <i class="fas fa-arrow-right me-1"></i> Now using: <strong>${replacementChem.name}</strong>
+                        </div>
+                    `;
+                }
+
+                row.innerHTML = `
+                    <td>${chemical.id || 'N/A'}</td>
+                    <td>${chemicalNameCell}</td>
+                    <td>${chemical.type || 'N/A'}</td>
+                    <td>${chemical.target_pest || 'N/A'}</td>
+                    <td>${chemical.dosage || '0'} ${chemical.dosage_unit || 'ml'}</td>
+                    <td>${quantity}</td>
+                    <td class="${isExpired ? 'expired-date' : ''}">${formattedDate}</td>
+                    <td><span class="status-badge ${statusClass}">${statusText}</span></td>
+                    <td>
+                        ${isReplaced ?
+                            '<button class="btn btn-sm btn-outline-secondary undo-replace-btn" data-chemical-id="' + chemical.id + '"><i class="fas fa-undo me-1"></i>Undo</button>' :
+                            '<button class="btn btn-sm btn-outline-primary replace-btn" data-chemical-id="' + chemical.id + '"><i class="fas fa-exchange-alt me-1"></i>Replace</button>'
+                        }
+                    </td>
+                `;
+                table.appendChild(row);
+            });
+        }
+
+        // Test function
+        async function testChemicalDisplay() {
+            const testResult = document.getElementById('testResult');
+            testResult.innerHTML = '<div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div> Running test...';
+            testResult.className = 'alert alert-info';
+
+            try {
+                // First, populate the table without fetching chemicals
+                populateOriginalRecommendations();
+
+                // Check if quantity and expiration date are displayed as N/A
+                const initialQuantityCells = document.querySelectorAll('#originalRecommendationsTable td:nth-child(6)');
+                const initialExpirationCells = document.querySelectorAll('#originalRecommendationsTable td:nth-child(7)');
+                
+                const initialQuantityValues = Array.from(initialQuantityCells).map(cell => cell.textContent.trim());
+                const initialExpirationValues = Array.from(initialExpirationCells).map(cell => cell.textContent.trim());
+
+                // Now fetch the chemicals and populate the table again
+                await fetchAvailableChemicals();
+                populateOriginalRecommendations();
+
+                // Check if quantity and expiration date are now properly displayed
+                const updatedQuantityCells = document.querySelectorAll('#originalRecommendationsTable td:nth-child(6)');
+                const updatedExpirationCells = document.querySelectorAll('#originalRecommendationsTable td:nth-child(7)');
+                
+                const updatedQuantityValues = Array.from(updatedQuantityCells).map(cell => cell.textContent.trim());
+                const updatedExpirationValues = Array.from(updatedExpirationCells).map(cell => cell.textContent.trim());
+
+                // Compare the values
+                const quantityChanged = initialQuantityValues.some((val, idx) => val !== updatedQuantityValues[idx]);
+                const expirationChanged = initialExpirationValues.some((val, idx) => val !== updatedExpirationValues[idx]);
+
+                if (quantityChanged && expirationChanged) {
+                    testResult.innerHTML = '<i class="fas fa-check-circle me-2"></i> Test passed! Quantity and expiration date are properly displayed after fetching chemicals.';
+                    testResult.className = 'alert alert-success';
+                } else {
+                    testResult.innerHTML = '<i class="fas fa-times-circle me-2"></i> Test failed! Quantity and/or expiration date did not update properly.';
+                    testResult.className = 'alert alert-danger';
+                }
+            } catch (error) {
+                testResult.innerHTML = `<i class="fas fa-exclamation-circle me-2"></i> Error during test: ${error.message}`;
+                testResult.className = 'alert alert-danger';
+            }
+        }
+
+        // Add event listener to the test button
+        document.getElementById('testBtn').addEventListener('click', testChemicalDisplay);
+    </script>
+</body>
+</html>

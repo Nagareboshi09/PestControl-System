@@ -1,0 +1,90 @@
+:root {
+    /* Color Palette - Matching Admin Side */
+    --primary-color: #3B82F6;
+    --primary-dark: #2563eb;
+    --primary-light: #93c5fd;
+
+    --secondary-color: #2563eb;
+    --secondary-dark: #1e40af;
+    --secondary-light: #bfdbfe;
+
+    --accent-color: #3B82F6;
+    --accent-dark: #2563eb;
+    --accent-light: #93c5fd;
+
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --error-color: #e74c3c;
+    --dark-color: #1e3a8a;
+
+    --background-color: #f8f9fa;
+    --card-color: #ffffff;
+    --border-color: #e9ecef;
+
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-light: #f8f9fa;
+
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-md: 1rem;      /* 16px */
+    --font-size-lg: 1.125rem;  /* 18px */
+    --font-size-xl: 1.25rem;   /* 20px */
+    --font-size-2xl: 1.5rem;   /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem;  /* 36px */
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;   /* 4px */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-2xl: 3rem;     /* 48px */
+
+    /* Border Radius */
+    --border-radius-sm: 0.25rem;  /* 4px */
+    --border-radius-md: 0.5rem;   /* 8px */
+    --border-radius-lg: 0.75rem;  /* 12px */
+    --border-radius-xl: 1rem;     /* 16px */
+    --border-radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Transitions */
+    --transition-fast: all 0.2s ease;
+    --transition-normal: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+
+    /* Layout */
+    --sidebar-width: 280px;
+    --sidebar-width-collapsed: 80px;
+    --header-height: 70px;
+    --container-max-width: 1200px;
+
+    /* Z-index */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+}
+
+/* Dark Mode Variables (for future implementation) */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --card-color: #1e1e1e;
+    --border-color: #2c2c2c;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+}

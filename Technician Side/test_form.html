@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Submit Report Form</title>
+    <link href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Test Submit Report Form</h1>
+        <form id="testForm" class="mt-4">
+            <div class="mb-3">
+                <label for="appointment_id" class="form-label">Appointment ID</label>
+                <input type="text" class="form-control" id="appointment_id" name="appointment_id" value="101">
+            </div>
+            <div class="mb-3">
+                <label for="area" class="form-label">Area (m²)</label>
+                <input type="number" class="form-control" id="area" name="area" value="100">
+            </div>
+            <div class="mb-3">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea class="form-control" id="notes" name="notes">Test notes</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="recommendation" class="form-label">Recommendation</label>
+                <textarea class="form-control" id="recommendation" name="recommendation">Test recommendation</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="problem_area" class="form-label">Problem Area</label>
+                <input type="text" class="form-control" id="problem_area" name="problem_area" value="Test problem area">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Pest Types</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="pest_types[]" value="Flies" id="pestFlies" checked>
+                    <label class="form-check-label" for="pestFlies">Flies</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="pest_types[]" value="Ants" id="pestAnts" checked>
+                    <label class="form-check-label" for="pestAnts">Ants</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Type of Work</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="type_of_work[]" value="General Pest Control" id="workGeneral" checked>
+                    <label class="form-check-label" for="workGeneral">General Pest Control</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="preferred_date" class="form-label">Preferred Date</label>
+                <input type="date" class="form-control" id="preferred_date" name="preferred_date" value="2025-05-14">
+            </div>
+            <div class="mb-3">
+                <label for="preferred_time" class="form-label">Preferred Time</label>
+                <input type="time" class="form-control" id="preferred_time" name="preferred_time" value="10:00">
+            </div>
+            <div class="mb-3">
+                <label for="frequency" class="form-label">Frequency</label>
+                <select class="form-control" id="frequency" name="frequency">
+                    <option value="one-time" selected>One-time Treatment</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selected_chemicals" class="form-label">Selected Chemicals (JSON)</label>
+                <textarea class="form-control" id="selected_chemicals" name="selected_chemicals">[{"id":"31","name":"Imidaclopred","type":"Insecticide","dosage":"20","dosage_unit":"ml","target_pest":"Crawling & Flying Pest"}]</textarea>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-primary" id="testSubmitBtn">Test Diagnostic</button>
+                <button type="button" class="btn btn-success" id="testOriginalBtn">Test Original</button>
+                <button type="button" class="btn btn-info" id="testSimpleBtn">Test Simple</button>
+            </div>
+        </form>
+        <div id="result" class="mt-4 card">
+            <div class="card-header">Response</div>
+            <div class="card-body">
+                <pre id="responseOutput">No response yet</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('testSubmitBtn').addEventListener('click', function() {
+            submitForm('test_report_submission.php');
+        });
+
+        document.getElementById('testOriginalBtn').addEventListener('click', function() {
+            submitForm('submit_report.php');
+        });
+
+        document.getElementById('testSimpleBtn').addEventListener('click', function() {
+            submitForm('submit_report_simple.php');
+        });
+
+        function submitForm(endpoint) {
+            // Show loading
+            const responseOutput = document.getElementById('responseOutput');
+            responseOutput.textContent = 'Submitting to ' + endpoint + '...';
+
+            // Get form data
+            const form = document.getElementById('testForm');
+            const formData = new FormData(form);
+
+            // Log form data
+            console.log('Submitting form data to', endpoint);
+            for (let [key, value] of formData.entries()) {
+                console.log(key, value);
+            }
+
+            // Set timeout
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
+            // Send request
+            fetch(endpoint, {
+                method: 'POST',
+                body: formData,
+                signal: controller.signal
+            })
+            .then(response => {
+                clearTimeout(timeoutId);
+                return response.text();
+            })
+            .then(text => {
+                console.log('Raw response:', text);
+                try {
+                    const result = JSON.parse(text);
+                    responseOutput.textContent = JSON.stringify(result, null, 2);
+
+                    if (result.success) {
+                        Swal.fire({
+                            title: 'Success',
+                            text: result.message || 'Submission successful',
+                            icon: 'success'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: result.message || 'Submission failed',
+                            icon: 'error'
+                        });
+                    }
+                } catch (e) {
+                    responseOutput.textContent = 'Invalid JSON response:\n\n' + text;
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Invalid JSON response from server',
+                        icon: 'error'
+                    });
+                }
+            })
+            .catch(error => {
+                clearTimeout(timeoutId);
+                responseOutput.textContent = 'Error: ' + error.message;
+
+                Swal.fire({
+                    title: 'Error',
+                    text: error.name === 'AbortError' ? 'Request timed out after 30 seconds' : error.message,
+                    icon: 'error'
+                });
+            });
+        }
+    </script>
+</body>
+</html>

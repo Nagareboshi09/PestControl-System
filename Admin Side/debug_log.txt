@@ -1,0 +1,2371 @@
+Request received at 2025-05-03 06:02:25
+POST data: Array
+(
+    [pest_types] => Ants, Cockroaches, Bed Bugs
+)
+
+Pest types: Ants, Cockroaches, Bed Bugs
+Parsed pest list: Array
+(
+    [0] => Ants
+    [1] => Cockroaches
+    [2] => Bed Bugs
+)
+
+Found general pest: Ants
+Found general pest: Cockroaches
+Found general pest: Bed Bugs
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Ants
+                    [1] => Cockroaches
+                    [2] => Bed Bugs
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Ants","Cockroaches","Bed Bugs"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-03 10:29:51
+POST data: Array
+(
+    [pest_types] => Ants
+)
+
+Pest types: Ants
+Parsed pest list: Array
+(
+    [0] => Ants
+)
+
+Found general pest: Ants
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Ants
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Ants"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-05 06:36:11
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-05 06:40:54
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-07 15:13:00
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-07 15:23:44
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-07 15:23:55
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-07 15:33:52
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-07 15:56:06
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-08 13:41:12
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-08 19:02:47
+POST data: Array
+(
+    [pest_types] => Ants
+)
+
+Pest types: Ants
+Parsed pest list: Array
+(
+    [0] => Ants
+)
+
+Found general pest: Ants
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Ants
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Ants"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-08 19:17:59
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-08 19:40:48
+POST data: Array
+(
+    [pest_types] => Grass
+)
+
+Pest types: Grass
+Parsed pest list: Array
+(
+    [0] => Grass
+)
+
+Found grass problem: Grass
+Detection results:
+- Has general pests: No
+- Has rodent: No
+- Has termite: No
+- Has grass: Yes
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 0
+Case: ONLY Grass - Adding ONLY Weed Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => Weed Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Grass
+                )
+
+            [has_general_pests] => 
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 1
+            [has_disinfect] => 
+            [general_pest_count] => 0
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["Weed Control"],"debug":{"pest_list":["Grass"],"has_general_pests":false,"has_rodent":false,"has_termite":false,"has_grass":true,"has_disinfect":false,"general_pest_count":0,"total_pest_types":1}}
+
+Request received at 2025-05-08 19:43:52
+POST data: Array
+(
+    [pest_types] => Mice/Rats
+)
+
+Pest types: Mice/Rats
+Parsed pest list: Array
+(
+    [0] => Mice/Rats
+)
+
+Found general pest: Mice/Rats
+This is also a rodent: Mice/Rats
+Detection results:
+- Has general pests: Yes
+- Has rodent: Yes
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY Mice/Rats - Adding ONLY Rodent Control Only
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => Rodent Control Only
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Mice/Rats
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 1
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["Rodent Control Only"],"debug":{"pest_list":["Mice\/Rats"],"has_general_pests":true,"has_rodent":true,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 15:21:49
+POST data: Array
+(
+    [pest_types] => Mice/Rats
+)
+
+Pest types: Mice/Rats
+Parsed pest list: Array
+(
+    [0] => Mice/Rats
+)
+
+Found general pest: Mice/Rats
+This is also a rodent: Mice/Rats
+Detection results:
+- Has general pests: Yes
+- Has rodent: Yes
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY Mice/Rats - Adding ONLY Rodent Control Only
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => Rodent Control Only
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Mice/Rats
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 1
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["Rodent Control Only"],"debug":{"pest_list":["Mice\/Rats"],"has_general_pests":true,"has_rodent":true,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 16:59:51
+POST data: Array
+(
+    [pest_types] => Mice/Rats
+)
+
+Pest types: Mice/Rats
+Parsed pest list: Array
+(
+    [0] => Mice/Rats
+)
+
+Found general pest: Mice/Rats
+This is also a rodent: Mice/Rats
+Detection results:
+- Has general pests: Yes
+- Has rodent: Yes
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY Mice/Rats - Adding ONLY Rodent Control Only
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => Rodent Control Only
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Mice/Rats
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 1
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["Rodent Control Only"],"debug":{"pest_list":["Mice\/Rats"],"has_general_pests":true,"has_rodent":true,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 17:25:29
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 17:25:36
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 17:31:43
+POST data: Array
+(
+    [pest_types] => Ants
+)
+
+Pest types: Ants
+Parsed pest list: Array
+(
+    [0] => Ants
+)
+
+Found general pest: Ants
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Ants
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Ants"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 17:42:07
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 17:55:34
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 18:13:55
+POST data: Array
+(
+    [pest_types] => Termites
+)
+
+Pest types: Termites
+Parsed pest list: Array
+(
+    [0] => Termites
+)
+
+Found general pest: Termites
+This is also a termite: Termites
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: Yes
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY Termites - Adding ONLY Termite Baiting
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => Termite Baiting
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Termites
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 1
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["Termite Baiting"],"debug":{"pest_list":["Termites"],"has_general_pests":true,"has_rodent":false,"has_termite":true,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 18:40:37
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 18:44:22
+POST data: Array
+(
+    [pest_types] => Ants
+)
+
+Pest types: Ants
+Parsed pest list: Array
+(
+    [0] => Ants
+)
+
+Found general pest: Ants
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Ants
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Ants"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 19:11:17
+POST data: Array
+(
+    [pest_types] => Ants
+)
+
+Pest types: Ants
+Parsed pest list: Array
+(
+    [0] => Ants
+)
+
+Found general pest: Ants
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Ants
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Ants"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-09 19:23:00
+POST data: Array
+(
+    [pest_types] => Cockroaches
+)
+
+Pest types: Cockroaches
+Parsed pest list: Array
+(
+    [0] => Cockroaches
+)
+
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 01:52:27
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 02:06:58
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 02:26:47
+POST data: Array
+(
+    [pest_types] => Disinfect Area
+)
+
+Pest types: Disinfect Area
+Parsed pest list: Array
+(
+    [0] => Disinfect Area
+)
+
+Found disinfect area: Disinfect Area
+Detection results:
+- Has general pests: No
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: Yes
+- Total pest types: 1
+General pest count: 0
+Case: ONLY Disinfect - Adding ONLY Disinfection
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => Disinfection
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Disinfect Area
+                )
+
+            [has_general_pests] => 
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 1
+            [general_pest_count] => 0
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["Disinfection"],"debug":{"pest_list":["Disinfect Area"],"has_general_pests":false,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":true,"general_pest_count":0,"total_pest_types":1}}
+
+Request received at 2025-05-10 02:31:54
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 02:39:24
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 02:40:08
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 02:45:53
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 04:52:27
+POST data: Array
+(
+    [pest_types] => Flies
+)
+
+Pest types: Flies
+Parsed pest list: Array
+(
+    [0] => Flies
+)
+
+Found general pest: Flies
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 1
+General pest count: 1
+Case: ONLY one general pest - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 1
+            [total_pest_types] => 1
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":1,"total_pest_types":1}}
+
+Request received at 2025-05-10 10:44:44
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-10 14:30:39
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-10 17:51:39
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-10 18:07:26
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-10 18:07:52
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-10 19:07:40
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-11 04:09:49
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-11 04:11:15
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-11 04:49:45
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-11 04:51:42
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+
+Request received at 2025-05-11 10:44:06
+POST data: Array
+(
+    [pest_types] => Flies, Ants, Cockroaches
+)
+
+Pest types: Flies, Ants, Cockroaches
+Parsed pest list: Array
+(
+    [0] => Flies
+    [1] => Ants
+    [2] => Cockroaches
+)
+
+Found general pest: Flies
+Found general pest: Ants
+Found general pest: Cockroaches
+Detection results:
+- Has general pests: Yes
+- Has rodent: No
+- Has termite: No
+- Has grass: No
+- Has disinfect: No
+- Total pest types: 3
+General pest count: 3
+Case: At least TWO general pests - Adding ONLY General Pest Control
+Response: Array
+(
+    [success] => 1
+    [message] => Work types determined successfully
+    [work_types] => Array
+        (
+            [0] => General Pest Control
+        )
+
+    [debug] => Array
+        (
+            [pest_list] => Array
+                (
+                    [0] => Flies
+                    [1] => Ants
+                    [2] => Cockroaches
+                )
+
+            [has_general_pests] => 1
+            [has_rodent] => 
+            [has_termite] => 
+            [has_grass] => 
+            [has_disinfect] => 
+            [general_pest_count] => 3
+            [total_pest_types] => 3
+        )
+
+)
+
+JSON Response: {"success":true,"message":"Work types determined successfully","work_types":["General Pest Control"],"debug":{"pest_list":["Flies","Ants","Cockroaches"],"has_general_pests":true,"has_rodent":false,"has_termite":false,"has_grass":false,"has_disinfect":false,"general_pest_count":3,"total_pest_types":3}}
+

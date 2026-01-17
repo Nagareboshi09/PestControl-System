@@ -1,0 +1,26 @@
+/* Header fixes to match the design */
+.header {
+    background-color: white !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #e9ecef !important;
+}
+
+.header-title h1 {
+    color: #3B82F6 !important;
+    font-size: 1.25rem !important;
+}
+
+.user-name {
+    color: #333 !important;
+    font-size: 0.9rem !important;
+}
+
+.user-role {
+    color: #6c757d !important;
+    font-size: 0.75rem !important;
+}
+
+/* Notification icon */
+.notification-icon {
+    color: #3B82F6 !important;
+}

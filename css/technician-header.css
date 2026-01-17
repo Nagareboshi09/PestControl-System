@@ -1,0 +1,207 @@
+/* Import variables */
+@import url('variables.css');
+
+/* Header Styles */
+.header {
+    height: var(--header-height, 70px);
+    background-color: var(--card-color, #ffffff);
+    border-bottom: 1px solid var(--border-color, #e9ecef);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--spacing-xl, 2rem);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: var(--sidebar-width, 280px);
+    transition: var(--transition-normal, all 0.3s ease);
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24));
+    /* Ensure header is above other content */
+    z-index: var(--z-index-fixed, 1030);
+}
+
+/* Logo and Title */
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm, 0.5rem);
+}
+
+.header-title h1 {
+    font-size: var(--font-size-xl, 1.25rem);
+    font-weight: 600;
+    color: var(--primary-color, #3B82F6);
+    margin: 0;
+}
+
+/* User Menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--spacing-sm, 0.5rem) var(--spacing-md, 1rem);
+    border-radius: var(--border-radius-md, 0.5rem);
+    transition: var(--transition-fast, all 0.2s ease);
+}
+
+.user-info:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--spacing-sm, 0.5rem);
+    border: 2px solid var(--primary-color, #3B82F6);
+}
+
+.user-name {
+    font-weight: 500;
+    color: var(--text-primary, #212529);
+}
+
+.user-role {
+    font-size: var(--font-size-xs, 0.75rem);
+    color: var(--text-secondary, #6c757d);
+}
+
+/* Notifications */
+.notification-container {
+    position: relative;
+    margin-right: var(--spacing-md, 1rem);
+}
+
+.notification-icon {
+    font-size: var(--font-size-xl, 1.25rem);
+    color: var(--text-secondary, #6c757d);
+    cursor: pointer;
+    transition: var(--transition-fast, all 0.2s ease);
+}
+
+.notification-icon:hover {
+    color: var(--primary-color, #3B82F6);
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--error-color, #e74c3c);
+    color: white;
+    font-size: var(--font-size-xs, 0.75rem);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Notification Dropdown */
+.notification-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: none;
+}
+
+.notification-dropdown.show {
+    display: block;
+}
+
+/* Notification Header */
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.mark-all-read {
+    font-size: 0.875rem;
+    color: var(--primary-color, #3B82F6);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.mark-all-read:hover {
+    color: var(--primary-dark, #2563eb);
+    text-decoration: underline;
+}
+
+/* Mobile Toggle */
+.mobile-toggle {
+    display: none;
+    font-size: var(--font-size-xl, 1.25rem);
+    color: var(--text-primary, #212529);
+    cursor: pointer;
+    transition: var(--transition-fast, all 0.2s ease);
+}
+
+.mobile-toggle:hover {
+    color: var(--primary-color, #3B82F6);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .header {
+        padding: 0 var(--spacing-lg, 1.5rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        left: 0;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .user-name {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-title h1 {
+        font-size: var(--font-size-lg, 1.125rem);
+    }
+
+    .user-role {
+        display: none;
+    }
+}
+
+/* Main content adjustment for fixed header */
+.main-content {
+    margin-top: var(--header-height, 70px);
+    padding: var(--spacing-lg, 1.5rem);
+    transition: var(--transition-normal, all 0.3s ease);
+}
+
+/* Adjust container for fixed header */
+.container {
+    padding-top: var(--header-height, 70px);
+}

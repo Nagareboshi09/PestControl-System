@@ -1,0 +1,32 @@
+/* Override font styling to match chemical_inventory.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.chemicals-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.chemicals-header h1 i {
+  margin-right: 10px;
+}
+
+/* Override profile container styles */
+.profile-container {
+  margin-top: 20px;
+}
+
+/* Override sidebar active state */
+.sidebar-nav li.active a {
+  background-color: #f0f7ff;
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+}

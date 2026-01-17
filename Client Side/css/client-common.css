@@ -1,0 +1,153 @@
+/**
+ * Common CSS for all client-side pages
+ * This file contains shared styles to ensure consistency across all client pages
+ */
+
+/* Enhanced Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h1 {
+    margin-bottom: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.page-header p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--font-size-md);
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.35rem 0.65rem;
+    border-radius: var(--border-radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.status-pending {
+    background-color: var(--border-color);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.status-assigned {
+    background-color: #0047AB; /* Strong blue color (Cobalt) */
+    color: white;
+    border: 1px solid #0047AB;
+}
+
+.status-completed {
+    background-color: var(--success-color);
+    color: white;
+    border: 1px solid var(--success-color);
+}
+
+/* Enhanced Cards */
+.enhanced-card {
+    background: var(--card-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-lg);
+    transition: var(--transition-normal);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.enhanced-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.enhanced-card-header {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+    color: var(--text-light);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enhanced-card-body {
+    padding: var(--spacing-lg);
+}
+
+/* Technician Info */
+.technician-info {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--background-color);
+    border-radius: var(--border-radius-md);
+}
+
+.technician-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--spacing-md);
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.technician-details {
+    flex: 1;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border-bottom: none;
+    padding: var(--spacing-lg);
+}
+
+.modal-footer {
+    border-top: none;
+    padding: var(--spacing-lg);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-header > div:last-child {
+        margin-top: var(--spacing-sm);
+    }
+}

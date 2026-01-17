@@ -1,0 +1,163 @@
+/**
+ * Floating Action Button CSS
+ * This file contains styles for the floating action button component
+ */
+
+/* Import variables */
+@import url('variables.css');
+
+/* Bounce Animation Keyframes */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    40% {
+        transform: translateY(-15px) scale(1.1);
+    }
+    60% {
+        transform: translateY(-7px) scale(1.05);
+    }
+}
+
+/* Floating Action Button Container */
+.fab-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: var(--z-index-fixed);
+}
+
+/* Main Floating Action Button */
+.fab-button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    border: none;
+    outline: none;
+}
+
+.fab-button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Bouncing Animation Class */
+.fab-bounce {
+    animation: bounce 1s ease infinite !important;
+    transform-origin: center bottom;
+}
+
+/* Procedure Steps Container */
+.procedure-steps {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 320px;
+    max-width: 90vw;
+    background-color: var(--card-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-lg);
+    z-index: var(--z-index-fixed);
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-color);
+}
+
+.procedure-steps.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Procedure Steps Header */
+.procedure-steps-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.procedure-steps-header h3 {
+    font-size: var(--font-size-lg);
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.procedure-steps-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.procedure-steps-close:hover {
+    color: var(--error-color);
+}
+
+/* Procedure Steps Content */
+.procedure-steps-content {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.procedure-steps-content ol {
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.procedure-steps-content li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.procedure-steps-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .fab-container {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .procedure-steps {
+        bottom: 90px;
+        right: 20px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fab-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .procedure-steps {
+        bottom: 80px;
+        padding: var(--spacing-md);
+    }
+
+    .procedure-steps-header h3 {
+        font-size: var(--font-size-md);
+    }
+}
