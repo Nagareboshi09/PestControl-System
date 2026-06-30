@@ -124,7 +124,7 @@ PestControl-System/
 
 ### Installation
 
-1. Copy the `PestControl-System` into your web root (e.g. `C:\xampp\htdocs\PestControl-System)` on Windows).
+1. Copy the `PestControl-System` into your web root (e.g. `C:\xampp\htdocs\PestControl-System` on Windows).
 2. Start Apache and MySQL from the XAMPP control panel.
 3. Import the database schema:
    ```sql
