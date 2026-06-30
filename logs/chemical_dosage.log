@@ -1993,3 +1993,273 @@ Chemical data (decoded from JSON string):
 Found 1 chemicals:
   [0] Imidaclopred: Recommended: 20 ml
 ---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 1121
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 1121
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 1121
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 1226
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 1226
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 1226
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 1173
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 1173
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 1173
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 1120
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 1120
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 1120
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 1014
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin A: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 1014
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin D: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 1014
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin D: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 950
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 950
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 950
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 949
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 949
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 949
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 948
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 948
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 948
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_report_chemical_usage, ID: 935
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Imidaclopred: Recommended: 200 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: job_order_chemical_recommendations, ID: 935
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Imidaclopred: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:47] Source: assessment_report_chemical_recommendations, ID: 935
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Imidaclopred: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 1121
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 1121
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 1121
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 1226
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 1226
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 1226
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 1173
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 1173
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 1173
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 1120
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 1120
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 1120
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin Z: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 1014
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin A: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 1014
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin D: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 1014
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin D: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 950
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 950
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 950
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 949
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 949
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 949
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 948
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 948
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 948
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Cypermethrin E: Recommended: 40 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_report_chemical_usage, ID: 935
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Imidaclopred: Recommended: 200 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: job_order_chemical_recommendations, ID: 935
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Imidaclopred: Recommended: 20 ml
+---------------------------------------------
+[2026-04-16 09:29:48] Source: assessment_report_chemical_recommendations, ID: 935
+Chemical data (decoded from JSON string):
+Found 1 chemicals:
+  [0] Imidaclopred: Recommended: 20 ml
+---------------------------------------------
