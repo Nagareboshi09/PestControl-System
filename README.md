@@ -5,7 +5,7 @@ A full-stack PHP/MySQL web application for managing pest control operations, inc
 ## Project Structure
 
 ```
-macj2/
+PestControl-System/
 ├── root-level entry points and tools
 │   ├── index.php                          # Redirects to landing page
 │   ├── SignIn.php                         # User authentication
@@ -124,11 +124,11 @@ macj2/
 
 ### Installation
 
-1. Copy the `macj2` folder into your web root (e.g. `C:\xampp\htdocs\macj2` on Windows).
+1. Copy the `PestControl-System` into your web root (e.g. `C:\xampp\htdocs\PestControl-System)` on Windows).
 2. Start Apache and MySQL from the XAMPP control panel.
 3. Import the database schema:
    ```sql
-   mysql -u root < macj2/macj_pest_control.sql
+   mysql -u root < PestControl-System/macj_pest_control.sql
    ```
    Or use phpMyAdmin at `http://localhost/phpmyadmin` to import `macj_pest_control.sql`.
 4. Verify `db_config.php` and `db_connect.php` match your local DB credentials.
@@ -146,7 +146,7 @@ Some account features depend on email notifications configured through `FUNCTION
 
 ## Usage
 
-- Open `http://localhost/macj2` in your browser.
+- Open `http://localhost/PestControl-System` in your browser.
 - Sign in with an admin, technician, or client account.
 
 ### User Roles
